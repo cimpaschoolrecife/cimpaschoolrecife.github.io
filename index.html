@@ -1,28 +1,241 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Congresso CIMPA</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>CIMPA Schools Recife - Prototype</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #0a9396;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Seções do site */
+    section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x400.png?text=CIMPA+Schools+Recife') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .about, .program, .organization, .registration, .contact {
+      background: #fff;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #0a9396;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      background: #0a9396;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #059495;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Responsividade simples */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      .hero {
+        height: 250px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Bem-vindo ao Congresso CIMPA</h1>
-    <p>Esta é uma página de teste hospedada no GitHub Pages.</p>
-    <p>Se você está vendo isso, significa que a hospedagem foi bem-sucedida! 🎉</p>
+
+  <!-- Cabeçalho e Menu -->
+  <header>
+    <nav>
+      <div class="logo">CIMPA Schools Recife</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#organization">Organization</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Principal (Hero) -->
+  <section class="hero" id="home">
+    <h1>CIMPA Schools Recife 2026</h1>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About CIMPA Schools</h2>
+    <p>
+      CIMPA Schools aim to provide an introduction to current research in
+      mathematics and related fields such as computer science and theoretical physics.
+      The focus is on regions with a genuine enthusiasm for mathematics and
+      potential for research development.
+    </p>
+    <p>
+      The CIMPA Schools Recife event will take place at the
+      <strong>Universidade Federal Rural de Pernambuco (UFRPE)</strong>, Brazil,
+      and is scheduled for either <strong>January 19–31, 2026</strong> or
+      <strong>January 26–February 7, 2026</strong>. Participants from neighboring
+      developing countries will receive financial support for travel and living
+      expenses, as part of CIMPA's mission.
+    </p>
+    <a class="cta-button" href="#registration">Apply Now</a>
+  </section>
+
+  <!-- Program -->
+  <section class="program" id="program">
+    <h2>Program Overview</h2>
+    <p>
+      Our school spans two weeks and features four main courses, each covering
+      essential aspects of complex systems and applied mathematics:
+    </p>
+    <ul>
+      <li><strong>Mathematical Modeling in Neuroscience</strong></li>
+      <li><strong>Topological Data Analysis in Complex Systems</strong></li>
+      <li><strong>Mathematical Modeling of Epidemiological Systems</strong></li>
+      <li><strong>Statistical Mechanics of Neural Networks</strong></li>
+    </ul>
+    <p>
+      Hands-on programming sessions, short communication slots for participants,
+      and round-table discussions on ethics and research in the Global South
+      are also planned.
+    </p>
+  </section>
+
+  <!-- Organization -->
+  <section class="organization" id="organization">
+    <h2>Organization</h2>
+    <p>
+      The event is organized by:
+    </p>
+    <ul>
+      <li><strong>Local Coordinator:</strong> Prof. Rubia Araújo (UFRPE)</li>
+      <li><strong>External Coordinator:</strong> Dr. Fernando A. N. Santos (University of Amsterdam)</li>
+      <li>Committee Members: UFRPE, UFPE, SBMAC, and invited instructors from around the world.</li>
+    </ul>
+    <p>
+      <strong>Host Institution:</strong> Universidade Federal Rural de Pernambuco,
+      <em>Recife, Brazil</em>.
+    </p>
+  </section>
+
+  <!-- Registration -->
+  <section class="registration" id="registration">
+    <h2>Registration</h2>
+    <p>
+      The registration process is open to graduate students, early-career
+      researchers, and anyone interested in advanced training in mathematics
+      and related fields. A limited number of grants are available for participants
+      from developing countries.
+    </p>
+    <p>
+      <em>More details on how to apply will be announced soon.</em>
+    </p>
+    <a class="cta-button" href="mailto:organizer@example.com">Contact for Info</a>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>
+      For inquiries about registration, funding, or any other questions:
+    </p>
+    <p>Email:
+      <a href="mailto:rubia.araujo@ufrpe.br">rubia.araujo@ufrpe.br</a>
+      or
+      <a href="mailto:f.a.nobregasantos@uva.nl">f.a.nobregasantos@uva.nl</a>
+    </p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 CIMPA Schools Recife. All rights reserved.</p>
+  </footer>
 </body>
 </html>
