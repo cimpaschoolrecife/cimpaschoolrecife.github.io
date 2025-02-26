@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>CIMPA Schools Recife - Prototype</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIMPA Schools Recife 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Reset básico */
+    :root {
+      --primary: #2A5F7F;
+      --secondary: #3B8EA5;
+      --accent: #F49E4C;
+      --light: #F5F9FC;
+      --dark: #1A2F38;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -12,230 +21,318 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       line-height: 1.6;
-      color: #333;
-      background: #f9f9f9;
+      color: var(--dark);
+      background-color: var(--light);
     }
 
-    header {
-      background: #0a9396;
-      color: #fff;
-      padding: 1rem 2rem;
+    /* Header */
+    .header {
+      background: var(--primary);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    nav {
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
-    nav .logo {
-      font-weight: bold;
+    .logo {
+      color: white;
+      font-weight: 700;
       font-size: 1.5rem;
+      text-decoration: none;
     }
 
-    nav ul {
-      list-style: none;
+    .nav-menu {
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
+      list-style: none;
     }
 
-    nav ul li a {
-      color: #fff;
+    .nav-link {
+      color: white;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s;
     }
 
-    nav ul li a:hover {
-      text-decoration: underline;
+    .nav-link:hover {
+      color: var(--accent);
     }
 
-    /* Seções do site */
-    section {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .hamburger {
+      display: none;
+      cursor: pointer;
     }
 
+    /* Hero Section */
     .hero {
-      background: url('https://via.placeholder.com/1200x400.png?text=CIMPA+Schools+Recife') center/cover no-repeat;
-      height: 400px;
+      background: linear-gradient(rgba(42,95,127,0.9), rgba(59,142,165,0.8)),
+                  url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: #fff;
+      color: white;
+      padding: 2rem;
     }
 
-    .hero h1 {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 1rem;
-      border-radius: 5px;
+    .hero-content {
+      max-width: 800px;
     }
 
-    .about, .program, .organization, .registration, .contact {
-      background: #fff;
+    .hero-title {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    /* Main Content */
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      color: var(--primary);
+      font-size: 2.5rem;
       margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: var(--accent);
+      margin: 0.5rem auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .program-card {
+      border-left: 4px solid var(--secondary);
+    }
+
+    .team-card {
+      text-align: center;
       padding: 1.5rem;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
 
-    h2 {
+    .team-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
       margin-bottom: 1rem;
-      color: #0a9396;
+      object-fit: cover;
     }
 
-    p {
-      margin-bottom: 1rem;
-    }
-
-    .cta-button {
+    .button {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
-      margin-top: 1rem;
-      background: #0a9396;
-      color: #fff;
-      border-radius: 5px;
+      padding: 0.8rem 2rem;
+      background: var(--secondary);
+      color: white;
+      border-radius: 25px;
       text-decoration: none;
-      transition: background 0.3s;
+      font-weight: 600;
+      transition: all 0.3s;
     }
 
-    .cta-button:hover {
-      background: #059495;
+    .button:hover {
+      background: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+        color: white;
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--primary);
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .section {
+        padding: 2rem 1rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
     }
 
     footer {
-      background: #222;
-      color: #ccc;
+      background: var(--dark);
+      color: white;
       text-align: center;
-      padding: 1rem 0;
-    }
-
-    /* Responsividade simples */
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-      }
-      .hero {
-        height: 250px;
-      }
+      padding: 2rem;
+      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
-
-  <!-- Cabeçalho e Menu -->
-  <header>
-    <nav>
-      <div class="logo">CIMPA Schools Recife</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#program">Program</a></li>
-        <li><a href="#organization">Organization</a></li>
-        <li><a href="#registration">Registration</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#" class="logo">CIMPA 2026</a>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#program" class="nav-link">Program</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#registration" class="nav-link">Registration</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+      <div class="hamburger">☰</div>
     </nav>
   </header>
 
-  <!-- Seção Principal (Hero) -->
-  <section class="hero" id="home">
-    <h1>CIMPA Schools Recife 2026</h1>
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Mathematics of Complex Systems</h1>
+      <p class="hero-subtitle">January 19-31, 2026 | Recife, Brazil</p>
+      <a href="#registration" class="button">Apply Now</a>
+    </div>
   </section>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <h2>About CIMPA Schools</h2>
-    <p>
-      CIMPA Schools aim to provide an introduction to current research in
-      mathematics and related fields such as computer science and theoretical physics.
-      The focus is on regions with a genuine enthusiasm for mathematics and
-      potential for research development.
-    </p>
-    <p>
-      The CIMPA Schools Recife event will take place at the
-      <strong>Universidade Federal Rural de Pernambuco (UFRPE)</strong>, Brazil,
-      and is scheduled for either <strong>January 19–31, 2026</strong> or
-      <strong>January 26–February 7, 2026</strong>. Participants from neighboring
-      developing countries will receive financial support for travel and living
-      expenses, as part of CIMPA's mission.
-    </p>
-    <a class="cta-button" href="#registration">Apply Now</a>
+  <section class="section" id="about">
+    <h2 class="section-title">About the School</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📍 Host Institution</h3>
+        <p>Universidade Federal Rural de Pernambuco (UFRPE)<br>
+        Recife, Pernambuco, Brazil</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Objectives</h3>
+        <p>• Foster international collaborations<br>
+           • Advance research in complex systems<br>
+           • Promote mathematical education</p>
+      </div>
+      <div class="card">
+        <h3>👥 Participants</h3>
+        <p>60 researchers from:<br>
+        Latin America, Europe, and worldwide<br>
+        50%+ international participants</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Program -->
-  <section class="program" id="program">
-    <h2>Program Overview</h2>
-    <p>
-      Our school spans two weeks and features four main courses, each covering
-      essential aspects of complex systems and applied mathematics:
-    </p>
-    <ul>
-      <li><strong>Mathematical Modeling in Neuroscience</strong></li>
-      <li><strong>Topological Data Analysis in Complex Systems</strong></li>
-      <li><strong>Mathematical Modeling of Epidemiological Systems</strong></li>
-      <li><strong>Statistical Mechanics of Neural Networks</strong></li>
-    </ul>
-    <p>
-      Hands-on programming sessions, short communication slots for participants,
-      and round-table discussions on ethics and research in the Global South
-      are also planned.
-    </p>
+  <section class="section" id="program">
+    <h2 class="section-title">Program Highlights</h2>
+    <div class="grid">
+      <div class="card program-card">
+        <h3>🧠 Mathematical Neuroscience</h3>
+        <p>Neural dynamics, synchronization phenomena, and topological methods</p>
+      </div>
+      <div class="card program-card">
+        <h3>📊 Topological Data Analysis</h3>
+        <p>Persistent homology, computational topology, real-world applications</p>
+      </div>
+      <div class="card program-card">
+        <h3>🦠 Epidemiological Modeling</h3>
+        <p>Compartmental models, network analysis, disease control strategies</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Organization -->
-  <section class="organization" id="organization">
-    <h2>Organization</h2>
-    <p>
-      The event is organized by:
-    </p>
-    <ul>
-      <li><strong>Local Coordinator:</strong> Prof. Rubia Araújo (UFRPE)</li>
-      <li><strong>External Coordinator:</strong> Dr. Fernando A. N. Santos (University of Amsterdam)</li>
-      <li>Committee Members: UFRPE, UFPE, SBMAC, and invited instructors from around the world.</li>
-    </ul>
-    <p>
-      <strong>Host Institution:</strong> Universidade Federal Rural de Pernambuco,
-      <em>Recife, Brazil</em>.
-    </p>
+  <section class="section" id="team">
+    <h2 class="section-title">Organizing Team</h2>
+    <div class="grid">
+      <div class="card team-card">
+        <img src="https://via.placeholder.com/120" alt="Rubia Araújo">
+        <h3>Prof. Rubia Araújo</h3>
+        <p>Local Coordinator<br>UFRPE</p>
+      </div>
+      <div class="card team-card">
+        <img src="https://via.placeholder.com/120" alt="Fernando Santos">
+        <h3>Dr. Fernando Santos</h3>
+        <p>External Coordinator<br>University of Amsterdam</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Registration -->
-  <section class="registration" id="registration">
-    <h2>Registration</h2>
-    <p>
-      The registration process is open to graduate students, early-career
-      researchers, and anyone interested in advanced training in mathematics
-      and related fields. A limited number of grants are available for participants
-      from developing countries.
-    </p>
-    <p>
-      <em>More details on how to apply will be announced soon.</em>
-    </p>
-    <a class="cta-button" href="mailto:organizer@example.com">Contact for Info</a>
+  <section class="section" id="registration">
+    <h2 class="section-title">Registration</h2>
+    <div class="card" style="max-width: 600px; margin: 0 auto;">
+      <p>Registration opens: January 2025</p>
+      <p>Deadline: September 30, 2025</p>
+      <p>Financial support available for developing countries</p>
+      <a href="mailto:rubia.araujo@ufrpe.br" class="button">Request Information</a>
+    </div>
   </section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>
-      For inquiries about registration, funding, or any other questions:
-    </p>
-    <p>Email:
-      <a href="mailto:rubia.araujo@ufrpe.br">rubia.araujo@ufrpe.br</a>
-      or
-      <a href="mailto:f.a.nobregasantos@uva.nl">f.a.nobregasantos@uva.nl</a>
-    </p>
-  </section>
-
-  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2026 CIMPA Schools Recife. All rights reserved.</p>
+    <p>© 2026 CIMPA School Recife<br>
+    Contact: rubia.araujo@ufrpe.br | f.a.nobregasantos@uva.nl</p>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
