@@ -506,7 +506,7 @@
       <!-- Dr. Ana P. Milán -->
       <div class="member-card">
         <div class="member-header">
-          <span class="member-icon">🌍</span>
+          <span class="member-icon">👩🌍</span>
           <div>
             <h4 class="member-name">Dr. Ana P. Milán</h4>
             <p class="member-role">Team Member</p>
@@ -569,7 +569,7 @@
 
       <div class="member-card">
         <div class="member-header">
-          <span class="member-icon">⚙️📊</span>
+          <span class="member-icon">⚙️🖥️📊</span>
           <div>
             <h4 class="member-name">Dr. Leon Silva</h4>
             <p class="member-role">Team Member</p>
@@ -748,6 +748,12 @@
         });
       });
     });
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-menu').classList.remove('active');
+  });
+});
+
   </script>
 </body>
 </html>
