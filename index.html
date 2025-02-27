@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CIMPA Schools Recife 2026</title>
+  <title>CIMPA School Recife 2026</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -159,6 +159,7 @@
       object-fit: cover;
     }
 
+
     .button {
       display: inline-block;
       padding: 0.8rem 2rem;
@@ -218,16 +219,105 @@
       padding: 2rem;
       margin-top: 4rem;
     }
+
+
+    /* Estrutura Principal */
+.team-category {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.category-title {
+  color: #2A5F7F;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.category-subtitle {
+  color: #3B8EA5;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards de Membros */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.member-card {
+  padding: 1.2rem;
+  border-left: 4px solid #F49E4C;
+  transition: transform 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+}
+
+.member-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.member-icon {
+  font-size: 1.8rem;
+}
+
+.member-name {
+  color: #1A2F38;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.member-role {
+  color: #3B8EA5;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.member-details {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Destaque CIMPA */
+.cimpa-officer {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #2A5F7F 0%, #3B8EA5 100%);
+  color: white;
+  border-radius: 12px;
+}
+
+.officer-badge {
+  background: #F49E4C;
+  width: fit-content;
+  margin: 0 auto 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+}
   </style>
 </head>
 <body>
   <header class="header">
     <nav class="nav-container">
-      <a href="#" class="logo">CIMPA Schools Recife</a>
+      <a href="#" class="logo">CIMPA School Recife</a>
       <ul class="nav-menu">
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#program" class="nav-link">Program</a></li>
+        <li><a href="#courses" class="nav-link">Courses</a></li> <!-- Alterado de Program para Courses -->
+        <li><a href="#research" class="nav-link">Research Talks</a></li> <!-- Novo menu -->
         <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#practical" class="nav-link">Practical Info</a></li> <!-- Novo menu -->
         <li><a href="#registration" class="nav-link">Registration</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -237,65 +327,390 @@
 
   <section class="hero">
     <div class="hero-content">
-      <h1 class="hero-title">Mathematics of Complex Systems</h1>
+      <h1 class="hero-title">The Mathematics of Complex Systems:<br>Theory and Applications</h1> <!-- Título corrigido -->
       <p class="hero-subtitle">January 19-31, 2026 | Recife, Brazil</p>
       <a href="#registration" class="button">Apply Now</a>
     </div>
   </section>
 
-  <section class="section" id="about">
-    <h2 class="section-title">About the School</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>📍 Host Institution</h3>
-        <p>Universidade Federal Rural de Pernambuco (UFRPE)<br>
-        Recife, Pernambuco, Brazil</p>
+ <section class="section" id="about">
+  <h2 class="section-title">About the School</h2>
+  <div class="grid">
+
+    <!-- Host Institution Card -->
+    <div class="card">
+      <div class="icon-title">
+<!--        <span class="emoji">🏛️</span>-->
+        <h3> 🏛️ Host Institution</h3>
       </div>
-      <div class="card">
-        <h3>🎯 Objectives</h3>
-        <p>• Foster international collaborations<br>
-           • Advance research in complex systems<br>
-           • Promote mathematical education</p>
+      <p><strong>Universidade Federal Rural de Pernambuco (UFRPE)</strong></p>
+      <p class="highlight">A growing mathematics department with expertise in:<br>
+      • Nonlinear dynamics<br>
+      • Differential equations<br>
+      • Topological methods</p>
+      <p>📍 Campus location: Rua Dom Manuel de Medeiros, Recife</p>
+    </div>
+
+    <!-- Support Institutions Card -->
+    <div class="card">
+      <div class="icon-title">
+<!--        <span class="emoji">🤝</span>-->
+        <h3>🤝 Support Institutions</h3>
       </div>
-      <div class="card">
-        <h3>👥 Participants</h3>
-        <p>60 researchers from:<br>
-        Latin America, Europe, and worldwide<br>
-        50%+ international participants</p>
+      <div class="institution-list">
+        <div class="institution-item">
+          <strong>UFPE</strong>
+          <p>Graduate programs in Statistics<br>5km from UFRPE campus</p>
+        </div>
+        <div class="institution-item">
+          <strong>International Partners</strong>
+          <p>• University of Amsterdam<br>• BCAM (Basque Center)<br>• Sapienza Università di Roma</p>
+        </div>
+        <div class="institution-item">
+          <strong>Institutional Support</strong>
+          <p>Brazilian Society for Computational<br>and Applied Mathematics (SBMAC)</p>
+        </div>
       </div>
     </div>
-  </section>
 
-  <section class="section" id="program">
-    <h2 class="section-title">Program Highlights</h2>
+    <!-- Objectives Card -->
+    <div class="card">
+      <div class="icon-title">
+<!--        <span class="emoji">🎯</span>-->
+        <h3>🎯 Objectives</h3>
+      </div>
+      <ul class="objectives-list">
+        <li>Develop local research capacity in applied mathematics</li>
+        <li>Foster North-South scientific collaborations</li>
+        <li>Advance research in complex systems</li>
+        <li>Promote mathematical education</li>
+        <li>Promote gender balance in STEM (43% women participants)</li>
+      </ul>
+    </div>
+
+    <!-- Participants Card -->
+<!--    <div class="card">-->
+<!--      <div class="icon-title">-->
+<!--&lt;!&ndash;        <span class="emoji">👥</span>&ndash;&gt;-->
+<!--        <h3>👥 Participants</h3>-->
+<!--      </div>-->
+<!--      <div class="stats-grid">-->
+<!--        <div class="stat-item">-->
+<!--          <div class="stat-number">60</div>-->
+<!--          <div class="stat-label">Researchers</div>-->
+<!--        </div>-->
+<!--        <div class="stat-item">-->
+<!--          <div class="stat-number">50%+</div>-->
+<!--          <div class="stat-label">International</div>-->
+<!--        </div>-->
+<!--        <div class="stat-item">-->
+<!--          <div class="stat-number">16+</div>-->
+<!--          <div class="stat-label">Countries</div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <p class="note">Priority for participants from:<br>Latin America & developing countries</p>-->
+<!--    </div>-->
+
+  </div>
+</section>
+
+  <section class="section" id="courses">
+    <h2 class="section-title">Courses</h2>
+
+
     <div class="grid">
-      <div class="card program-card">
+
+            <div class="card program-card">
         <h3>🧠 Mathematical Neuroscience</h3>
-        <p>Neural dynamics, synchronization phenomena, and topological methods</p>
+  <p><strong>Instructors:</strong> Ana P. Millán (University of Granada), Fernanda Selingardi (UFAL)</p>
+  <p><strong>Keywords:</strong> Neural dynamics, synchronization phenomena, criticality in neural networks, brain network analysis, differential equations, dynamical systems</p>
+  <p><strong>Practical Focus:</strong> Hands-on modeling of neural systems using Python, with applications to brain function and neural network analysis.</p>
       </div>
       <div class="card program-card">
-        <h3>📊 Topological Data Analysis</h3>
-        <p>Persistent homology, computational topology, real-world applications</p>
+       <h3>📊 Topological Data Analysis</h3>
+  <p><strong>Instructor:</strong> Fernando A.N. Santos (University of Amsterdam/UFPE)</p>
+  <p><strong>Keywords:</strong> Persistent homology, computational topology, simplicial complexes, high-order interactions, real-world applications</p>
+  <p><strong>Practical Focus:</strong> Analysis of complex datasets from neuroscience, epidemiology, and finance using Python libraries (GUDHI, Ripser).</p>
       </div>
+
       <div class="card program-card">
         <h3>🦠 Epidemiological Modeling</h3>
-        <p>Compartmental models, network analysis, disease control strategies</p>
+  <p><strong>Instructors:</strong> Danilo Souza (BCAM), João Gondim (UFPE)</p>
+  <p><strong>Keywords:</strong> Compartmental models, network analysis, stochastic processes, parameter estimation, disease control strategies</p>
+  <p><strong>Practical Focus:</strong> Simulation of disease outbreaks using SIR/SEIR models and network-based approaches in Python.</p>
+      </div>
+      <div class="card program-card">
+        <h3>⚛️ Statistical Mechanics of Neural Networks</h3>
+  <p><strong>Instructors:</strong> Elena Agliari, Adriano Barra (Sapienza Università di Roma)</p>
+  <p><strong>Keywords:</strong> Spin-glass models, learning algorithms, Ising models, machine learning systems, neural network design</p>
+  <p><strong>Practical Focus:</strong> Application of statistical mechanics principles to analyze and design neural networks.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="team">
-    <h2 class="section-title">Organizing Team</h2>
-    <div class="grid">
-      <div class="card team-card">
-        <img src="https://via.placeholder.com/120" alt="Rubia Araújo">
-        <h3>Prof. Rubia Araújo</h3>
-        <p>Local Coordinator<br>UFRPE</p>
+
+  <section class="section" id="research">
+    <h2 class="section-title">Research Talks</h2>
+    <div class="card">
+      <h3>Thematic Sessions of Short Communications</h3>
+    <p>This session will showcase cutting-edge research and foster collaboration among participants through:</p>
+
+    <ul>
+      <li><strong>Local Expertise:</strong> Presentations by scholars from Recife and neighboring areas, highlighting regional research strengths in complex systems and applied mathematics.</li>
+      <li><strong>Participant Contributions:</strong> Opportunities for attendees to present their own work, with dedicated time for discussion and feedback.</li>
+<!--      <li><strong>Interdisciplinary Focus:</strong> Talks spanning the main themes of the school, including mathematical neuroscience, epidemiological modeling, and topological data analysis.</li>-->
+    </ul>
+    </div>
+  </section>
+
+<section class="section" id="team">
+  <h2 class="section-title">Team</h2>
+
+  <!-- Organizing Committee -->
+  <div class="team-category">
+    <h3 class="category-title">📋 Organizing Committee</h3>
+    <p class="category-subtitle">Strategic Planning & Logistics</p>
+    <div class="members-grid">
+
+      <!-- Dr. Rubia Araújo -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-icon">👩🏫</span>
+          <div>
+            <h4 class="member-name">Dr. Rubia Araújo</h4>
+            <p class="member-role">Local Coordinator</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Adjunct Professor<br>
+          Department of Mathematics<br>
+          UFRPE, Brazil
+        </p>
       </div>
-      <div class="card team-card">
-        <img src="https://via.placeholder.com/120" alt="Fernando Santos">
-        <h3>Dr. Fernando Santos</h3>
-        <p>External Coordinator<br>University of Amsterdam</p>
+
+
+      <div class="member-card highlight-card">
+        <div class="member-header">
+          <span class="member-icon">🔬</span>
+          <div>
+            <h4 class="member-name">Dr. Fernando A.N. Santos</h4>
+             <p class="member-role">External Coordinator</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Research Fellow<br>
+          University of Amsterdam & UFPE
+        </p>
+      </div>
+
+      <!-- Dr. Ana P. Milán -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-icon">🌍</span>
+          <div>
+            <h4 class="member-name">Dr. Ana P. Milán</h4>
+            <p class="member-role">Team Member</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Ramón y Cajal Fellow<br>
+          University of Granada, Spain
+        </p>
+      </div>
+
+      <!-- Dr. Marcelo Piropo -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-icon">📚</span>
+          <div>
+            <h4 class="member-name">Dr. Marcelo Piropo</h4>
+            <p class="member-role">Team Member</p>
+
+          </div>
+        </div>
+        <p class="member-details">
+          Adjunct Professor<br>
+          Department of Mathematics<br>
+          UFRPE, Brazil
+        </p>
+      </div>
+
+      <!-- Dr. Pablo Rodriguez -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-icon">📊</span>
+          <div>
+            <h4 class="member-name">Dr. Pablo Rodriguez</h4>
+            <p class="member-role">Team Member</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Adjunct Professor<br>
+          Department of Statistics<br>
+          UFPE, Brazil
+        </p>
+      </div>
+
+      <!-- Dr. Paula Cadavid -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-icon">📚</span>
+          <div>
+            <h4 class="member-name">Dr. Paula Cadavid</h4>
+            <p class="member-role">Team Member</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Adjunct Professor<br>
+          Department of Mathematics<br>
+          UFRPE, Brazil
+        </p>
+      </div>
+
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-icon">⚙️📊</span>
+          <div>
+            <h4 class="member-name">Dr. Leon Silva</h4>
+            <p class="member-role">Team Member</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Associate Professor<br>
+          Department of Mathematics<br>
+          UFRPE, Brazil
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Teaching Team -->
+  <div class="team-category">
+    <h3 class="category-title">🎓 Teaching Team</h3>
+    <p class="category-subtitle">Course Leaders & Practitioners</p>
+    <div class="members-grid">
+
+      <!-- Dr. Fernando A.N. Santos -->
+      <div class="member-card highlight-card">
+        <div class="member-header">
+          <span class="member-icon">🔬</span>
+          <div>
+            <h4 class="member-name">Dr. Fernando A.N. Santos</h4>
+            <p class="member-role">Topological Data Analysis</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Research Fellow<br>
+          University of Amsterdam & UFPE
+        </p>
+      </div>
+
+      <!-- Dr. Danilo B. de Souza -->
+      <div class="member-card highlight-card">
+        <div class="member-header">
+          <span class="member-icon">🦠</span>
+          <div>
+            <h4 class="member-name">Dr. Danilo B. de Souza</h4>
+            <p class="member-role">Epidemiological Modeling</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Postdoctoral Fellow<br>
+          BCAM - Basque Center for Applied Mathematics
+        </p>
+      </div>
+
+      <!-- Dr. João Gondim -->
+      <div class="member-card highlight-card">
+        <div class="member-header">
+          <span class="member-icon">📈</span>
+          <div>
+            <h4 class="member-name">Dr. João Gondim</h4>
+            <p class="member-role">Applied Epidemiology</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Adjunct Professor<br>
+          Department of Mathematics<br>
+          UFPE, Brazil
+        </p>
+      </div>
+
+      <!-- Dr. Elena Agliari -->
+      <div class="member-card highlight-card">
+        <div class="member-header">
+          <span class="member-icon">🧮</span>
+          <div>
+            <h4 class="member-name">Dr. Elena Agliari</h4>
+            <p class="member-role">Statistical Mechanics</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Associate Professor<br>
+          Sapienza Università di Roma, Italy
+        </p>
+      </div>
+
+      <!-- Dr. Adriano Barra -->
+      <div class="member-card highlight-card">
+        <div class="member-header">
+          <span class="member-icon">🧠</span>
+          <div>
+            <h4 class="member-name">Dr. Adriano Barra</h4>
+            <p class="member-role">Neural Network Theory</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Associate Professor<br>
+          Sapienza Università di Roma, Italy
+        </p>
+      </div>
+
+      <!-- Dr. Fernanda Selingardi -->
+      <div class="member-card highlight-card">
+        <div class="member-header">
+          <span class="member-icon">🧬</span>
+          <div>
+            <h4 class="member-name">Dr. Fernanda Selingardi</h4>
+            <p class="member-role">Computational Neuroscience</p>
+          </div>
+        </div>
+        <p class="member-details">
+          Assistant Professor<br>
+          Universidade Federal de Alagoas, Brazil
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CIMPA Officer -->
+  <div class="team-category">
+    <div class="cimpa-officer">
+      <div class="officer-badge">CIMPA</div>
+      <h4 class="member-name">Dr. Diletta Martinelli</h4>
+      <p class="member-role">Scientific Officer</p>
+      <p class="member-details">
+        Quality Assurance & Academic Supervision<br>
+        Centre International de Mathématiques Pures et Appliquées
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section" id="practical">
+    <h2 class="section-title">Practical Information</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📍 Venue</h3>
+        <p>UFRPE Campus<br>Rua Dom Manuel de Medeiros, S/n Dois Irmãos,  Recife - PE</p>
+        <p>UFPE Campus<br>Av. Prof. Moraes Rego, 1235 Cidade Universitária, Recife - PE </p>
+      </div>
+      <div class="card">
+        <h3>🏨 Accommodation</h3>
+        <p>Shared options available near campus</p>
       </div>
     </div>
   </section>
