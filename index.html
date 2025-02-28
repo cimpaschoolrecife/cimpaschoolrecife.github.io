@@ -15,9 +15,10 @@
       <a href="#" class="logo"  id="home-link">CIMPA School Recife</a>
       <ul class="nav-menu">
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
         <li><a href="#courses" class="nav-link">Courses</a></li> <!-- Alterado de Program para Courses -->
         <li><a href="#research" class="nav-link">Research Talks</a></li> <!-- Novo menu -->
-        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#schedule" class="nav-link">Schedule</a></li>
         <li><a href="#practical" class="nav-link">Practical Info</a></li> <!-- Novo menu -->
         <li><a href="#registration" class="nav-link">Registration</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -135,7 +136,7 @@ Emergent Phenomena (DIEP)<br> • Korteweg-de Vries Institute for Mathematics (K
       </div>
       <div class="card program-card">
        <h3>📊 Topological Data Analysis</h3>
-  <p><strong>Instructor:</strong> Fernando A.N. Santos (University of Amsterdam/UFPE)</p>
+  <p><strong>Instructor:</strong> Fernando A.N. Santos (UvA)</p>
   <p><strong>Keywords:</strong> Persistent homology, computational topology, simplicial complexes, high-order interactions, real-world applications</p>
   <p><strong>Practical Focus:</strong> Analysis of complex datasets from neuroscience, epidemiology, and finance using Python libraries (GUDHI, Ripser).</p>
       </div>
@@ -206,7 +207,8 @@ Emergent Phenomena (DIEP)<br> • Korteweg-de Vries Institute for Mathematics (K
         </div>
         <p class="member-details">
           Assistant Professor<br>
-          University of Amsterdam (UVA)
+          Korteweg-de Vries Institute for
+Mathematics, UvA, Netherlands
         </p>
       </div>
 
@@ -309,7 +311,7 @@ Emergent Phenomena (DIEP)<br> • Korteweg-de Vries Institute for Mathematics (K
         </div>
         <p class="member-details">
          Assistant Professor<br>
-          University of Amsterdam (UVA)
+          University of Amsterdam (UvA)
         </p>
       </div>
 
@@ -456,6 +458,91 @@ Emergent Phenomena (DIEP)<br> • Korteweg-de Vries Institute for Mathematics (K
   </div>
 </section>
 
+
+<!-- Schedule -->
+<!--  Como manter/atualizar:-->
+<!--Adicione novos dias copiando a estrutura day-schedule-->
+<!--Para novas atividades, copie e cole um schedule-item-->
+<!--Atualize cores e estilos modificando as classes CSS-->
+<!--Altere tipos de sessão através das classes session-type-->
+
+  <section class="section" id="schedule">
+  <h2 class="section-title">Schedule</h2>
+
+  <div class="schedule-container">
+    <!-- Filtros por dia -->
+    <div class="day-filters">
+      <button class="day-filter active" data-day="day1">Jan 19</button>
+      <button class="day-filter" data-day="day2">Jan 20</button>
+      <button class="day-filter" data-day="day3">Jan 21</button>
+      <button class="day-filter" data-day="day4">Jan 22</button>
+      <button class="day-filter" data-day="day5">Jan 23</button>
+      <button class="day-filter" data-day="day6">Jan 24</button>
+      <button class="day-filter" data-day="day7">Jan 25</button>
+      <button class="day-filter" data-day="day8">Jan 26</button>
+      <button class="day-filter" data-day="day9">Jan 27</button>
+      <button class="day-filter" data-day="day10">Jan 28</button>
+      <button class="day-filter" data-day="day11">Jan 29</button>
+      <button class="day-filter" data-day="day12">Jan 30</button>
+    </div>
+
+    <!-- Programação por dia -->
+    <div class="day-schedule active" id="day1">
+      <div class="schedule-item">
+        <div class="time-track">
+          <div class="time-icon">🕘</div>
+          <div class="time">xx:00 - xx:00</div>
+        </div>
+        <div class="schedule-card">
+          <span class="session-type course">Course name</span>
+          <h3>Course name</h3>
+          <div class="schedule-meta">
+            <span class="location">Room A1</span>
+            <span class="instructor">Instructor name</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-schedule" id="day2">
+      <div class="schedule-item">
+        <div class="time-track">
+          <div class="time-icon">🕘</div>
+          <div class="time">xx:00 - xx:00</div>
+        </div>
+        <div class="schedule-card">
+          <span class="session-type course">Course name</span>
+          <h3>Course name</h3>
+          <div class="schedule-meta">
+            <span class="location">Room A1</span>
+            <span class="instructor">Instructor name</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-track">
+          <div class="time-icon">🕥</div>
+          <div class="time">xx:45 - xx:15</div>
+        </div>
+        <div class="schedule-card">
+          <span class="session-type talk">Talk</span>
+          <h3>Title name</h3>
+          <div class="schedule-meta">
+            <span class="location">Auditorium</span>
+            <span class="instructor">Instructor name</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repetir para outros dias (day3, day4, etc.) -->
+  </div>
+
+  <div class="schedule-notice">
+    <p>📢 Schedule subject to changes - Last update: 25/01/2026</p>
+  </div>
+</section>
   <footer>
     <p><p>© 2026 CIMPA School Recife | Contact: cimpaschoolrecife@gmail.com</p><br>
      </footer>

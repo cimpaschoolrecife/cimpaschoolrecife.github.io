@@ -28,4 +28,23 @@
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const dayFilters = document.querySelectorAll('.day-filter');
+  const daySchedules = document.querySelectorAll('.day-schedule');
 
+  dayFilters.forEach(filter => {
+    filter.addEventListener('click', function () {
+      // Remove a classe 'active' de todos os botões
+      dayFilters.forEach(f => f.classList.remove('active'));
+      // Adiciona a classe 'active' ao botão clicado
+      this.classList.add('active');
+
+      // Oculta todos os dias
+      daySchedules.forEach(schedule => schedule.classList.remove('active'));
+
+      // Mostra o dia correspondente ao botão clicado
+      const targetDay = this.getAttribute('data-day');
+      document.getElementById(targetDay).classList.add('active');
+    });
+  });
+});
