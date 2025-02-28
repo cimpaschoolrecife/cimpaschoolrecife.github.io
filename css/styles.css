@@ -122,18 +122,136 @@
       margin-top: 2rem;
     }
 
-   .card {
+   /* Estilos Gerais dos Cards */
+.card {
   background: white;
-  border-radius: 12px; /* Bordas mais arredondadas */
+  border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra mais suave */
-  transition: all 0.3s ease; /* Transição suave para todos os efeitos */
-  border: 1px solid rgba(0,0,0,0.1); /* Borda sutil para destaque */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* Sombra mais intensa no hover */
+}
+
+/* Estilos Gerais */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.card-title {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-content {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Destaques da Pesquisa */
+.research-highlights {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.highlight-icon {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+
+.highlight-item h4 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Call to Action */
+.call-to-action {
+  background: rgba(244, 158, 76, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.call-to-action p {
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: var(--secondary);
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.support-item h4 {
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+
+.support-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.support-item li {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.card-notice {
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 /* Cards Específicos */
