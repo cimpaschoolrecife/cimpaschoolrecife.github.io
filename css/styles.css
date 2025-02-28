@@ -507,3 +507,36 @@
 .day-schedule.active {
   display: block;
 }
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  filter: invert(1); /* Para ícone branco em fundo escuro */
+  transition: opacity 0.3s;
+}
+
+.github-icon:hover {
+  opacity: 0.8;
+}
+
+
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .github-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); /* Para ícone branco em fundo escuro */
+}
