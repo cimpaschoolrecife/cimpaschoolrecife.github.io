@@ -163,9 +163,9 @@
     .button {
       display: inline-block;
       padding: 0.8rem 2rem;
-      background: var(--secondary);
+      background: #f49e4c;
       color: white;
-      border-radius: 25px;
+      border-radius: 20px;
       text-decoration: none;
       font-weight: 600;
       transition: all 0.3s;
@@ -293,7 +293,7 @@
 .cimpa-officer {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #2A5F7F 0%, #3B8EA5 100%);
+  /*background: linear-gradient(135deg, #2A5F7F 0%, #3B8EA5 100%);*/
   color: white;
   border-radius: 12px;
 }
@@ -311,7 +311,7 @@
 <body>
   <header class="header">
     <nav class="nav-container">
-      <a href="#" class="logo">CIMPA School Recife</a>
+      <a href="#" class="logo"  id="home-link">CIMPA School Recife</a>
       <ul class="nav-menu">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#courses" class="nav-link">Courses</a></li> <!-- Alterado de Program para Courses -->
@@ -780,6 +780,13 @@ Emergent Phenomena (DIEP)<br> • Korteweg-de Vries Institute for Mathematics (K
     document.querySelectorAll('.nav-menu a').forEach(link => {
   link.addEventListener('click', () => {
     document.querySelector('.nav-menu').classList.remove('active');
+  });
+});
+    document.getElementById('home-link').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
 });
 
