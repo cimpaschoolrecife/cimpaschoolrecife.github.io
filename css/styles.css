@@ -658,3 +658,766 @@ footer .github-icon {
   height: 20px;
   filter: invert(1); /* Para ícone branco em fundo escuro */
 }
+
+/* Thematic Sessions Grid */
+.thematic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.thematic-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-left: 4px solid var(--secondary);
+  transition: all 0.3s ease;
+}
+
+.thematic-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.thematic-title {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(244,158,76,0.3);
+}
+
+.thematic-responsible {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.thematic-abstract {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin 0.3s ease;
+}
+
+.thematic-abstract.show {
+  max-height: 500px;
+  margin-bottom: 1rem;
+}
+
+.thematic-toggle {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.thematic-toggle:hover {
+  background: rgba(244,158,76,0.1);
+}
+
+.thematic-toggle::after {
+  content: '▼';
+  font-size: 0.7rem;
+  transition: transform 0.3s;
+}
+
+.thematic-toggle.active::after {
+  transform: rotate(180deg);
+}
+
+/* Research Areas Styles */
+.research-area {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.area-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(42,95,127,0.1);
+}
+
+.area-icon {
+  font-size: 1.5rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.area-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+.area-organizers {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  white-space: nowrap;
+}
+
+.sessions-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.session-card {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  border-left: 3px solid var(--accent);
+}
+
+.session-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.session-number {
+  background: var(--secondary);
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.session-speaker {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+.session-title {
+  margin: 0.5rem 0 1rem;
+  color: var(--primary);
+  font-style: italic;
+}
+
+.session-abstract {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin 0.3s ease;
+}
+
+.session-abstract.show {
+  max-height: 500px;
+  margin-bottom: 1rem;
+}
+
+.session-toggle {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.session-toggle:hover {
+  background: rgba(244,158,76,0.1);
+}
+
+.session-toggle::after {
+  content: '▼';
+  font-size: 0.7rem;
+  transition: transform 0.3s;
+}
+
+.session-toggle.active::after {
+  transform: rotate(180deg);
+}
+
+
+/* Compact Layout Styles */
+.compact-areas-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.compact-area {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.compact-area-header {
+  background: rgba(42,95,127,0.1);
+  padding: 1rem;
+  border-left: 4px solid var(--primary);
+}
+
+.compact-area-title {
+  color: var(--primary);
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.compact-organizers {
+  display: block;
+  color: var(--secondary);
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.compact-sessions {
+  padding: 0.5rem 1rem;
+}
+
+.compact-session {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.compact-session:last-child {
+  border-bottom: none;
+}
+
+.compact-speaker {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.speaker-institution {
+  font-weight: normal;
+  color: #666;
+}
+
+.compact-title {
+  color: var(--primary);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.compact-toggle {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
+  cursor: pointer;
+}
+
+.compact-abstract {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.compact-abstract.show {
+  max-height: 500px;
+  padding-top: 0.5rem;
+}
+
+/* Dropdown Area Styles */
+.dropdown-area {
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.dropdown-area-btn {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dropdown-area-btn:hover {
+  background: #234a66;
+}
+
+.dropdown-icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  background: white;
+}
+
+.dropdown-area.active .dropdown-content {
+  max-height: 2000px; /* Ajuste conforme necessário */
+}
+
+.dropdown-area.active .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-organizers {
+  padding: 1rem 1.5rem;
+  background: rgba(59,142,165,0.1);
+  color: var(--secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(59,142,165,0.2);
+}
+
+.dropdown-session {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.thematic-areas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.thematic-area-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 4px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.thematic-area-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.area-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.area-icon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: var(--secondary);
+}
+
+.area-name {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.area-badge {
+  background: var(--accent);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.area-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.organizers {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.view-sessions-btn {
+  background: none;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.view-sessions-btn:hover {
+  background: rgba(59,142,165,0.1);
+}
+
+
+/* Estilos para o container de sessões */
+.sessions-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  background: rgba(245,249,252,0.7);
+}
+
+.thematic-area-card.active .sessions-container {
+  max-height: 2000px; /* Valor suficiente para conter todas as sessões */
+}
+
+/* Estilos para os cards de sessão (mantidos do anterior) */
+.session-card {
+  padding: 1.5rem;
+  margin: 0.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-left: 3px solid var(--secondary);
+}
+
+.session-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.session-number {
+  background: var(--accent);
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.session-speaker {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+.session-title {
+  margin: 0.5rem 0 1rem;
+  color: var(--primary);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.session-abstract {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.session-abstract.show {
+  max-height: 500px;
+  margin-bottom: 1rem;
+}
+
+.session-toggle {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.session-toggle::after {
+  content: '▼';
+  font-size: 0.7rem;
+  transition: transform 0.3s;
+}
+
+.session-toggle.active::after {
+  transform: rotate(180deg);
+}
+
+.compact-thematic-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.compact-area {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.compact-area-header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  background: rgba(42,95,127,0.05);
+  cursor: pointer;
+}
+
+.compact-area-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.organizers {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+.toggle-sessions {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.horizontal-sessions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.8rem;
+  padding: 0.8rem;
+  background: rgba(245,249,252,0.5);
+}
+
+.compact-session {
+  padding: 0.8rem;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-left: 3px solid var(--accent);
+}
+
+.session-meta {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.session-number {
+  background: var(--accent);
+  color: white;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.speaker {
+  font-weight: 600;
+}
+
+.institution {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.session-title {
+  font-size: 0.9rem;
+  color: var(--dark);
+  margin: 0.3rem 0 0.8rem;
+  font-style: italic;
+}
+
+.toggle-abstract {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+/* Estilos para estado collapsed */
+.compact-area.collapsed .horizontal-sessions {
+  display: none;
+}
+
+.compact-area.collapsed .toggle-sessions {
+  transform: rotate(-90deg);
+}
+
+.compact-research-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.research-area {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.area-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(42,95,127,0.1);
+}
+
+.area-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.area-organizers {
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.session-item {
+  padding: 1rem;
+  background: rgba(245,249,252,0.7);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
+}
+
+.session-header {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.session-number {
+  background: var(--accent);
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.speaker-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.institution {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.session-title {
+  font-size: 0.95rem;
+  color: var(--dark);
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.session-abstract {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.session-abstract.show {
+  max-height: 500px;
+  margin-bottom: 0.5rem;
+}
+
+.abstract-toggle {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.85rem;
+  padding: 0.3rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.abstract-toggle::after {
+  content: '▼';
+  font-size: 0.7rem;
+  transition: transform 0.3s;
+}
+
+.abstract-toggle.active::after {
+  transform: rotate(180deg);
+}
+
+/* Adicione isto ao seu CSS existente */
+.compact-research-container {
+  gap: 0.3rem !important; /* Espaço entre cards de área (era 1.5rem) */
+}
+
+.research-area {
+  margin-bottom: 0.3rem !important; /* Redundância para navegadores antigos */
+}
+
+/* Mantenha os estilos anteriores para session-speaker, session-title, etc */
