@@ -117,10 +117,17 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
     }
+
+   /*.about-grid {*/
+   /*   display: grid;*/
+   /*   grid-template-columns: repeat(3, minmax(380px, 1fr));*/
+   /*   gap: 2rem;*/
+   /*   margin-top: 2rem;*/
+   /* }*/
 
    /* Estilos Gerais dos Cards */
 .card {
@@ -160,6 +167,7 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .card-content {
@@ -1652,4 +1660,84 @@ footer .github-icon {
 /* Espaçamento interno para o conteúdo */
 .course-content {
   padding: 0.5rem;
+}
+
+/* Estilo para a logo da instituição */
+.institution-logo {
+  max-width: 160px;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  filter: grayscale(20%);
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.institution-logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Ajuste para o card-icon que contém a logo */
+.card .card-icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Se quiser manter o emoji junto com a logo */
+.card .card-icon-with-emoji {
+  position: relative;
+}
+
+.card .card-icon-with-emoji::before {
+  content: "🏛️";
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+  font-size: 1.5rem;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.institution-description {
+  margin-bottom: 0.8rem;
+}
+
+.expertise-list {
+  list-style: none;
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+}
+
+.expertise-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.expertise-list li::before {
+  content: "•";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 1rem;
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+
+.location-icon {
+  font-size: 1rem;
+}
+.institution-description {
+  margin-bottom: 0.8rem;
 }
