@@ -117,7 +117,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
     }
@@ -1574,3 +1574,82 @@ footer .github-icon {
   }
 }
 /* Mantenha os estilos anteriores para session-speaker, session-title, etc */
+
+/* Estilos para os cursos expansíveis */
+.course-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course-icon {
+  font-size: 1.8rem;
+}
+
+.course-summary {
+  margin-bottom: 1rem;
+}
+
+.course-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  color: #555;
+  line-height: 1.6;
+}
+
+.course-details.show {
+  max-height: 1000px; /* Ajuste conforme necessário */
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+
+.read-more .toggle-icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+
+.read-more.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.placeholder-text {
+  color: #999;
+  font-style: italic;
+}
+
+/* Garante transição suave */
+.session-abstract {
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.session-abstract.show {
+  max-height: 1000px; /* Valor suficiente para o conteúdo */
+  padding: 1rem;
+}
+
+/* Estilo para o estado hover do botão */
+.session-toggle:hover {
+  background: rgba(244, 158, 76, 0.1);
+}
+
+/* Espaçamento interno para o conteúdo */
+.course-content {
+  padding: 0.5rem;
+}
