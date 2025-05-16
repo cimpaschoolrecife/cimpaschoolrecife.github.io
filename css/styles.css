@@ -1741,3 +1741,23 @@ footer .github-icon {
 .institution-description {
   margin-bottom: 0.8rem;
 }
+
+
+
+
+.logo-container {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.logo-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 650;
+    font-size: 18px;
+}
+
+
+.star {
+    color: #FFD700;
+    font-size: 20px;
+}
