@@ -122,3 +122,11 @@ document.querySelectorAll('.abstract-toggle').forEach(button => {
     });
   }
 });
+
+document.querySelectorAll('.summary-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const sum = btn.nextElementSibling;
+    sum.classList.toggle('visible');
+    btn.textContent = sum.classList.contains('visible') ? 'Resumo ▲' : 'Resumo ▼';
+  });
+});

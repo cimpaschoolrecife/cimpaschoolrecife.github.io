@@ -867,3 +867,51 @@ footer .github-icon {
                        Geralmente, display: inline-flex (que já está aplicado)
                        cuida disso, mas align-self: flex-start é mais direto aqui. */
 }
+
+/* Container geral */
+details.area-summary {
+  margin: 0.75em 0;                /* espaço antes/depois */
+  padding: 0.5em 1em;              /* folga interna */
+  border-left:  4px solid var(--accent); /* linha colorida à esquerda */
+  background: #f9fbfd;             /* leve tom de fundo */
+  border-radius: 4px;
+  font-family: inherit;
+  color: #333;
+}
+
+/* Sumário clicável */
+details.area-summary > summary {
+  list-style: none;                /* remove marcador padrão */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ícone de seta custom */
+details.area-summary > summary::after {
+  content: "▾";                     /* seta para baixo */
+  font-size: 1.5em;
+  transition: transform .2s ease;
+  color: var(--accent);
+
+}
+
+/* Gira seta ao abrir */
+details.area-summary[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+/* Parágrafo interno */
+details.area-summary > p {
+  margin: 0.75em 0 0;              /* separa do summary */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
