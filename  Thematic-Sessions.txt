@@ -1,0 +1,453 @@
+Dynamical Systems Thematic Session
+Friday, January 30, 2026
+Coordenadores: Eduardo Leandro, Anete Soares, Thiago Dias e Marcelo Pedro
+
+
+Preliminary Program:
+
+
+9am - Clodoaldo Ragazzo (Universidade de São Paulo / Brazil)
+Title: Dissipative Forces and Their Role in Celestial Mechanics
+Abstract: This will be an introductory talk on how energy is dissipated in celestial systems. I will first explain tides, the main mechanism of energy loss in large bodies. Then I will show the main dynamical consequences of tides in simple two-body problems. Dissipative celestial mechanics aims to describe long transient behavior that leads to simple asymptotic states. These processes can be seen as multi-time-scale singular perturbation problems. However, the correct formulation of the problem is still an open question.
+
+
+10am - Antonio Carlos Fernandes (Universidade Federal de Itajubá / Brazil)
+Title: Stacked Central Configurations
+Abstract: We will introduce some concepts related to the Newtonian N-body problem. The relation of particular solutions of this problem with central configurations. Next, we will recall the definition of a stacked central configuration, a concept introduced by Marshall Hampton in 2005. We will then present some results for stacked central configurations with N = 5 and general N.
+
+
+
+
+11am- Ronaldo Garcia (Universidade Federal de Goiás / Brazil)
+Title: Deformations of Hamiltonians and limit cycles.
+Abstract: In this talk, it will be considered deformations of Hamiltonian systems, and the average theory will be applied to show the existence of isolated periodic orbits (limit cycles). Special attention will be paid to the coupled harmonic oscillators. In addition, some applications to the principal curvature lines will be explored.
+
+
+2pm- Eduardo Leandro (Universidade Federal de Pernambuco / Brazil)
+Title: Moments, Equilibrium Equations and Geometric Constraints
+Abstract: We review the classical theory of moments and formulate its implications for problems of equilibrium configurations of systems of interacting particles. Our study assumes only that the interactions are between pairs of particles and are directed along the lines connecting each pair. The equilibrium equations obtained from the theory of moments include celebrated equations from Celestial Mechanics such as Albouy-Chenciner and Dziobek equations for central configurations. All equilibrium equations are geometric in character, as they are expressed only in terms of mutual distances between particles and volumes of subconfigurations. We shall also briefly discuss applications to constraints on mutual distances to ensure a configuration has a given dimension or is co-spherical.
+
+
+3pm- Lei Zhao (Dalian University of Technology / China)
+Title: Title: Billiards and Celestial Mechanics
+Abstract: In recent years many links between celestial mechanics and billard-type problems have been studied in the research field of mechanical billiards, or billiards in a potential field. Several new integrable mechanical billiards have been identified and in the high energy regime many mechanical billiards in a Kepler potential field in the plane are shown to have chaotic dynamics. In this talk I will survey ideas for establishing integrability and chaos in these systems.
+
+
+_________________________________________________________________________
+
+Sistemas Complexos em Física e Estatística
+Friday, January 23, 2026
+Coordenadores: Viviane e Paulo Duarte
+
+Morning Session (9:00 – 12:30) — Foundations and Tools for Complex Systems
+
+Block 1 — Mathematical and Computational Foundations
+
+Topological Data Analysis: A Computer Scientist POV
+
+Wilson de Oliveira
+
+Departamento de Estatística e Informática, Universidade Federal Rural de Pernambuco,
+
+Recife, PE
+
+TDA is an applied branch of Algebraic Topology that deals with Data Science. Algebraic
+Topology is a branch of mathematics that uses tools from abstract algebra to study
+topological spaces. Topology is the branch of mathematics concerned with the properties
+of a geometric object that are preserved under continuous deformations. The fact that TDA
+ends up being useful to Data Science is rather surprising. For a Computer Scientist,
+Statistician, or Data Scientist in general to come to grips with the field of TDA seems a
+long, arduous path to follow. In this brief talk, I aim to demonstrate that there are shortcuts.
+With examples and very few definitions, I try to convince non-mathematicians they can
+safely use TDA and get encouraged to follow an introductory course on Algebraic
+Topology for Data Science.
+
+Weighted Permutation Entropy
+
+Borko Stosic
+
+Departamento de Estatística e Informática, Universidade Federal Rural de Pernambuco,
+
+Recife, PE
+
+Permutation entropy (PE) is a powerful and widely adopted method for assessing the
+predictability and complexity of time series. While it is parameter free, classical PE treats
+all ordinal patterns equally, which can obscure subtle dynamical structures by discarding
+information carried by amplitude variations. Weighted Permutation Entropy (WPE)
+addressed this limitation by introducing weights derived from the data’s amplitude,
+improving sensitivity to regime changes and outlier behavior. In this talk, I will describe the
+recently introduced Generalized Weighted Permutation Entropy (GWPE) method, a unified
+extension of both PE and WPE. GWPE broadens the framework by offering a tunable
+balance between ordinal structure and amplitude information, allowing flexible weighting
+schemes to enhance the effect of both small and large fluctuations. This generalization not
+only preserves the interpretability and computational efficiency of PE but also provides a
+richer lens to analyze predictability and complexity in nonlinear systems. I will outline the
+theoretical foundation of GWPE, demonstrate its computation, and present illustrative
+applications on synthetic systems and real-world datasets. The aim is to show how GWPE
+captures fluctuation dynamics that standard PE and WPE may miss, and to highlight open
+questions for applying GWPE in multi-scale and high-frequency data analysis.
+
+Generalized Solving Differential Equations via Neural Networks
+
+Tiago A. E. Ferreira
+
+Departamento de Estatística e Informática, Universidade Federal Rural de Pernambuco,
+
+Recife, PE
+
+Differential equations can be used to model many scientific and engineering problems.
+However, for many physical systems of practical interest, these differential equations are
+analytically intractable. Consequently, there is great interest in developing computational
+techniques to solve differential equations numerically. An artificial intelligence approach to
+solving differential equations is based on Neural Networks. A Neural Network is a
+computational model inspired by the structure and function of the human brain. At its core,
+it’s a system designed to recognize patterns and learn to process data in a way that
+mimics human cognition. The basic principle for solving differential equations with Neural
+Networks is to look at the problem as an optimization problem. Defining a differential
+equation generically as , where D is the differential equation of interest, u is a possible
+solution to D, and F is a known function. Let be the output of a Neural Network. If is a trial
+solution for D, then the residual of this trial solution can be expressed as . The core idea is
+to utilize the squared residual, , as the loss function during the Neural Network’s training
+process, thereby reducing the problem of solving the differential equation to a minimization
+problem.
+
+Coffee Break
+
+Block 2 — Modeling and Pattern Recognition in Natural Systems
+
+From Structure to Pattern: Modeling and Quantifying Complexity in Sargassum
+
+Morphology and Distribution
+Paulo Duarte Neto
+
+Departamento de Estatística e Informática, Universidade Federal Rural de Pernambuco,
+
+Recife, PE
+
+This presentation explores the morphological and spatial complexity of Sargassum spp.
+across individual to regional scales through an integrated computational approach. At the
+individual level, we employ rule-based modeling via L-systems to simulate realistic growth
+architectures of different Sargassum morphotypes, capturing topological constraints, apical
+dominance, and branching variability. These simulations provide a generative framework
+for testing hypotheses about developmental plasticity and environmental modulation of
+form. At the regional scale, we apply multifractal analysis to segmented remote sensing
+
+products of Sargassum strandings in the tropical Atlantic. The results reveal distinct
+multifractal signatures among morphological patch types, suggesting scale-invariant
+properties and heterogeneity in aggregation patterns potentially linked to hydrodynamic or
+biological drivers. Together, these modeling and analysis strategies offer complementary
+perspectives on the emergence of structural complexity in Sargassum systems,
+contributing to a deeper understanding of active matter dynamics in coastal and oceanic
+environments.
+
+Use of statistical tools for developing and exploiting ocean color satellite data for
+
+marine environmental purposes
+Vincent Vantrepotte
+
+Centre National de la Recherche Scientifique (CNRS), IRD – Laboratoire d’Océanologie et
+de Géosciences (LOG), Univ. Littoral Côte d’Opale, Univ. Lille, Wimereux, France.
+Ocean color satellite observations provide access to a wide range of key biogeochemical
+descriptors (phytoplankton biomass, particulate and dissolved matter, and associated
+carbon stocks). These data, available continuously since 1997, offer spatial resolutions
+ranging from 20 m to 1 km and quasi-daily temporal coverage, making it possible to study
+marine ecosystems at multiple scales—from synoptic to local, from extreme events to
+long-term changes. Interpreting the ocean color signal requires the development of
+specific algorithms, relying on various approaches (simple empirical models or machine
+learning-based methods). Similarly, exploiting the maps derived from satellite observations
+requires the implementation of adapted analytical tools (time-series decomposition,
+classifications, Self-Organizing Maps). This presentation will provide an overview of the
+potential of ocean color observations for studying the impacts of climatic and
+anthropogenic forcings on the marine environment, as well as the tools used.
+
+Stochastic Dynamics in Complex Systems: From Quantum Chaos to Optical
+
+Turbulence
+Iván R. R. Gonzalez
+
+School of Engineering, Faculty of Science, Engineering and Technology, Universidad
+
+Mayor, Santiago 7500994, Chile
+
+and Centro Multidisciplinario de Física, Universidad Mayor, Camino la Pirámide 5750,
+
+Huechuraba, Santiago, Chile
+
+This presentation is situated within the school of mathematics of complex systems and
+demonstrates how physical phenomena from two seemingly distinct domains—the
+quantum dynamics in billiards and the propagation of light through turbulent media—reveal
+common underlying principles when analyzed with stochastic tools. In particular, the
+generalization of the Rayleigh stochastic process serves as a unifying framework that
+enables the description of transitions between order and chaos through non-Gaussian
+probability density functions and power spectral densities characterized by 1/f α -type laws.
+In the context of quantum billiards, this approach provides a description of the transition
+from integrable dynamics to chaotic regimes by extending Dyson’s Brownian motion
+model. This extension captures phenomena such as energy level repulsion, the
+
+emergence of composite distributions, and the appearance of freezing regimes associated
+with multifractal structures. Similarly, in the study of optical turbulence, it is observed that
+the propagation of light beams through heterogeneous flows generates erratic
+displacements that do not conform to the Gaussian paradigm. Here, modeling via Weibull
+processes and Burr Type XII distributions accounts for the presence of heavy tails and
+extreme events, as well as the emergence of power spectra exhibiting 1/f α scaling under
+conditions of strong spatial correlation. Both scenarios—quantum chaos and atmospheric
+turbulence—demonstrate that the mathematics of stochastic processes not only provides a
+common language for diverse phenomena but also offers predictive tools to understand
+complex transitions. The connection between probability distributions and power spectra
+reveals a shared structure in which clusterization intermittency and amplitude intermittency
+coexist, illustrating the power of the stochastic approach as a bridge between theory and
+experiment in complex systems.
+
+Lunch
+
+Afternoon Session (14:00 – 17:30) — Population and Collective Dynamics in Natural
+Systems
+Block 3 — Population Dynamics
+Movement bias in asymmetric landscapes and its impact on population distribution
+
+and critical habitat size
+Pablo de Castro
+
+ICTP South American Institute for Fundamental Research, Instituto de Física Teórica,
+
+Universidade
+
+Estadual Paulista – UNESP, São Paulo, Brazil
+
+Ecologists have long investigated how demographic and movement parameters determine
+the spatial distribution and critical habitat size of a population. However, most models
+oversimplify movement behaviour, neglecting how landscape heterogeneity influences
+individual movement. We relax this assumption and introduce a
+reaction–advection–diffusion equation that describes population dynamics when
+individuals exhibit space-dependent movement bias toward preferred regions. Our model
+incorporates two types of these preferred regions: a high-quality habitat patch, termed
+‘habitat’, which is included to model avoidance of degraded habitats like deforested
+regions; and a preferred location, such as a chemoattractant source or a watering hole,
+that we allow to be asymmetrically located with respect to habitat edges. In this scenario,
+the critical habitat size depends on both the relative position of the preferred location and
+the movement bias intensities. When preferred locations are near habitat edges, the
+critical habitat size can decrease when diffusion increases, a phenomenon called the drift
+paradox. Also, ecological traps arise when the habitat overcrowds due to excessive
+attractiveness or the preferred location is near a low-quality region. Our results highlight
+the importance of species-specific movement behaviour and habitat preference as drivers
+of population dynamics in fragmented landscapes and, therefore, in the design of
+protected areas [1].
+
+[1] Dornelas, V., de Castro, P., Calabrese, J. M., Fagan, W. F., &amp; Martinez‐Garcia, R.
+(2024), Movement bias in asymmetric landscapes and its impact on population distribution
+and critical habitat size, Proceedings of the Royal Society A, 2024, 0185.
+
+Persistence of small populations facing seasonal resource variability
+
+Viviane Moraes de Oliveira
+
+Departamento de Física, Universidade Federal Rural de Pernambuco, Rua Manoel de
+
+Medeiros, s/n Dois Irmãos, 52171-900 Recife, Brazil
+
+Although rapid or recurrent fluctuations in resource availability are typical of natural
+habitats, their demographic consequences for small populations have yet to be thoroughly
+assessed. The present study aims to clarify how seasonal fluctuations in resource
+availability and demographic stochasticity interact to influence the persistence of small
+populations. Our analysis begins with a deterministic consumer–resource model driven by
+seasonal forcing, from which we develop an individual-based stochastic simulation with
+discrete generations to account for demographic and mutational variability. We
+demonstrate how phase lags among multiple substitutable resources, or adaptive shifts in
+metabolic allocation, can buffer extinction risk without changing average resource inputs.
+
+Evolutionary Rescue
+Paulo Roberto de Araújo Campos
+
+Departamento de Física, Universidade Federal de Pernambuco, 50740-560 Recife, PE,
+
+Brazil
+
+Understanding how species adapt and survive amid the rapid environmental changes
+driven by climate change has never been more urgent. We will introduce the foundations
+of evolutionary theory and the concept of fitness landscapes, before turning to a critical
+challenge: the idea of evolutionary rescue. We will examine the possibilities and limits of
+adaptation in avoiding extinction through rapid evolutionary change, drawing on insights
+from my recent work in mathematical modeling.
+
+Coffee Break
+
+Block 4 — Collective Behavior, Pattern Emergence and Complex Interactions
+
+Complexity of climate dynamics
+
+Tatijana Stosic
+
+Departamento de Estatística e Informática, Universidade Federal Rural de Pernambuco,
+
+Recife, PE
+
+Understanding the complexity of climate dynamics is essential for improving predictive
+models and resilience strategies in the face of increasing hydroclimatic extremes. This talk
+presents advanced methods used to access the nonlinear and scale-dependent behavior
+of climate variables: Multifractal Detrended Fluctuation Analysis (MFDFA), the
+Fisher–Shannon Information Plane, and the Complexity–Entropy Causality Plane (CECP).
+MFDFA is used to quantify long-range correlations, multifractality, and the contribution of
+small/large fluctuations in time series. The Fisher–Shannon plane provides a joint
+assessment of information content and disorder, enabling the identification of regimes with
+high unpredictability and low structural complexity. CECP is used to characterize the
+dynamical nature of the time series by mapping their position in the entropy–complexity
+space, distinguishing stochastic and chaotic behaviors. Together, these methods offer a
+robust framework for diagnosing the intrinsic variability and emergent patterns in climate
+systems.
+
+Hands-On with Collective Behavior: An Introductory Toolkit for Analyzing Animal
+
+Groups
+Fransisco C. B. Leal
+
+Departamento de Física, Universidade Federal Rural de Pernambuco, Rua Manoel de
+
+Medeiros, s/n Dois Irmãos, 52171-900 Recife, Brazil
+
+In this talk, I present two tools for the quantitative analysis of active collective
+systems—illustrated with experimental data from schools of Danio rerio. The goal is to
+provide participants with a practical and conceptual introduction to methods widely used in
+statistical physics and complex systems modeling.
+1. Mean Square Displacement (MSD): I show how this classic tool allows us to classify
+diffusion regimes—normal, superdiffusive, or subdiffusive—and reveal dynamic transitions
+induced by factors such as population density. I apply MSD to demonstrate how individual
+fish behavior changes as group size increases, exhibiting superdiffusion at low densities
+and transitioning to more restricted diffusion in larger groups.
+2. Levy Flight and Power Laws: I explain how to identify efficient search patterns through
+the distribution of step lengths. I show that, under certain conditions, individual movements
+follow truncated power laws, compatible with Lévy flights—a strategy optimized for
+exploration in uncertain environments. I discuss statistical criteria for distinguishing these
+patterns from Brownian motion and their biological significance.
+
+Throughout the presentation, I emphasize best practices in data analysis, methodological
+challenges, and physical interpretation of results.
+
+Mixed-phase space of an active particle in experimental Lemon Billiards
+
+Tiago Araújo Lima
+
+Departamento de Física, Universidade Federal Rural de Pernambuco, Recife, PE
+Billiards are flat cavities where a particle is free to move between elastic collisions with the
+boundary. In chaos theory, these systems are simple prototypes. The conservative
+dynamics of a billiard may vary from regular to chaotic, depending only on the shape of the
+boundary. In this work, we experimentally investigated active particle-environment
+interactions in Lemon Billiards. To achieve this, we develop an Arduino robot interacting
+with the billiard table, which acts as our active particle, and control the shape of the Lemon
+Billiard with a parameter γ ∈ [0, 0.5]. We experimentally confirm that the system’s
+dynamics continuously change from regular γ = 0 to fully chaotic γ = 0.5, passing through
+cases of mixed-phase space for intermediate values of γ. We also analyze the robot’s
+sensitivity to the initial conditions using the phase space as a function of time and the
+Lyapunov exponent to characterize the dynamics observed through the robot-environment
+interaction. Furthermore, we introduced a methodology based on recurrence analysis to
+compare numerical data with experimental data on a dynamical system. Numeric analyses
+complement the experimental results, showing a significant concordance. Our
+experimental setup presents an alternative method for measuring mixed-phase spaces in
+a billiard system outside the scope of optical physics. The robot-environment interaction
+provides an excellent alternative platform for experimental studies in physical systems,
+including additional aspects of chaos and dynamical systems such as confined self-
+propelled particles and self-avoiding active particles.
+
+
+_________________________________________________________________________
+
+CIMPA School Recife – Analysis Session
+Friday, January 23, 2026
+Organizers: Eudes Barboza, Felipe Cruz, João Marcos do Ó.
+
+Morning
+Time Speaker Duration
+09:00 – 09:45 Speaker 1 40 min + 5 min for questions
+09:45 – 10:30 Speaker 2 40 min + 5 min for questions
+10:30 – 11:00 Coffee Break —
+11:00 – 11:45 Speaker 3 40 min + 5 min for questions
+11:45 – 12:30 Speaker 4 40 min + 5 min for questions
+Afternoon
+Time Speaker Duration
+14h00 – 14h45 Speaker 5 40 min + 5 min for questions
+14h45 – 15h30 Speaker 6 40 min + 5 min for questions
+15h30 – 16h00 Coffee Break —
+16h00 – 16h45 Speaker 7 40 min + 5 min for questions
+16h45 – 17h30 Speaker 8 40 min + 5 min for questions
+
+
+Speaker 1: Anne Caroline Bronzi (UNICAMP)
+Title: On the well-posedness of a generalized doubly parabolic Keller-Segel system with fractional diffusion
+Abstract:
+In this talk, we will analyze a doubly parabolic Keller-Segel system in the whole space R^d, d ≥ 2, where both cellular and chemical diffusion are governed by fractional Laplacians with
+distinct exponents. This system generalizes the classical Keller-Segel model by introducing
+superdiffusion, a form of anomalous diffusion. This extension accounts for nonlocal diffusive
+effects observed in experimental settings, particularly in environments with sparse targets. We will present results on the local and global well-posedness of mild solutions for this generalized system under suitable conditions on the initial data in L^p(R^d). Additionally, we will characterize the asymptotic behavior of the solutions. This is a joint work with Crystianne
+Andrade (IMECC, Unicamp).
+
+Speaker 2: Marko Antonio Rojas Medar (UTA, Chile)
+Title: Theoretical Insights into Second-Grade Fluids
+
+Abstract:
+In this talk, we present some of the problems we are currently investigating concerning the equations governing second-grade fluids. In particular, on the temporal decay, we characterize the decay rate of solutions for the second-grade fluid equations in terms of the decay character of the initial data. Furthermore, by imposing slightly more regularity on the initial data, we investigate the large-time behavior of these solutions and compare them to the solutions of the linearized equations.
+
+Speaker 3: Sandra Imaculada Moreira Neto (UEMA)
+Title: Quasilinear elliptic problems with exponential growth via the Nehari manifold method:
+Existence of nonnegative and nodal solutions
+
+Abstract:
+In this talk, we address the existence of solutions for the quasilinear Schrödinger-type problem $$-\Delta u - \dfrac{1}{2}\Delta(a(x)u^2)u + V(x)u = f(u), \quad x \in \mathbb{R}^2,$$
+where $V$ is a continuous potential and $f:\mathbb{R}\to\mathbb{R}$ is a superlinear
+function with either exponential subcritical or exponential critical growth. Our main analytical
+tool is the Nehari manifold method, which we employ to establish the existence of
+nonnegative solutions as well as nodal solutions. The results extend and complement classical contributions on quasilinear Schrödinger equations obtained via the Nehari method,
+particularly those of Jia-quan Liu, Ya-qi Wang, and Zhi-Qiang Wang, by considering
+nonlinearities of exponential type in two dimensions.
+
+Speaker 4: Alânnio Barbosa Nobrega (UFCG)
+Title: Existence and Multiplicity of solutions for a class of Dirac equations
+
+Abstract:
+In this talk, we present recent results on the existence and multiplicity of semiclassical
+solutions for nonlinear Dirac equations involving continuous potentials and general nonlinear
+self-couplings. In the first part, we consider a class of nonlinear Dirac equations with a small
+parameter \( \varepsilon &gt; 0 \), where the nonlinearity depends on the modulus of the
+solution. Under mild assumptions, we prove that the number of solutions is at least the
+number of global minima of the potential function \( V \), provided \( \varepsilon \) is
+sufficiently small. In the second part, assuming that the external potential attains a local
+minimum, we relate the topological complexity of the set of minimum points to the
+multiplicity of solutions. The main tools include variational methods and the Lusternik--
+Schnirelmann category, combined with a penalization technique to handle the strongly
+indefinite nature of the associated energy functional. Both problems are motivated by the rich structure and analytical challenges posed by the Dirac operator, particularly in the
+semiclassical regime. Our results contribute to the understanding of nonlinear spinorial models by establishing existence and multiplicity theorems in settings with minimal regularity and without symmetry assumptions.
+
+Speaker 5: Jefferson Abrantes dos Santos (UFCG)
+Title: Global multiplicity of positive solutions for a sublinear elliptic equation in RN
+
+Abstract:
+We establish global multiplicity of positive solutions (existence and nonexistence theory) for a sublinear elliptic equation in RN with mass zero. In order to obtain our results we use a
+combination of the sub- super solution method and variational techniques. For instance, we
+need to implement a relevant result of type D^{1,2}(RN) versus X local minimizer for some
+appropriate space X. This is joint work with Minbo Yang (Zhejiang Normal University), Pedro
+Ubilla (USACH) and Jiazheng Zhou (UnB).
+
+Speaker 6: Evelina Shamarova (UFPB)
+Title: Singular solutions to k-Hessian equations with fast-growing nonlinearities
+
+Abstract:
+We study a class of elliptic problems, involving a k-Hessian and a very fast-growing
+nonlinearity, on a unit ball. We prove the existence of a radial singular solution and obtain its exact asymptotic behavior in a neighborhood of the origin. Furthermore, we study the multiplicity of regular solutions and bifurcation diagrams. Na essential ingredient of this study
+is analyzing the number of intersection points between the singular and regular solutions for rescaled problems. In the particular case of the exponential nonlinearity, we obtain the convergence of regular solutions to the singular and analyze the intersection number
+depending on the parameter k and the dimension d. This talk is based on joint work with João Marcos do Ó and Esteban da Silva.
+
+Speaker 7: Diego Ferraz (UFRN)
+Title: Positive ground states for integrodifferential Schrödinger-Poisson systems
+Abstract:
+This talk presents existence results for positive solutions to a Schrödinger-Poisson system driven by a general class of integrodifferential operators. The system allows for two distinct operators whose parameter orders can be chosen freely under a mild coupling condition. The nonlinearity is of a pure power type, with a growth exponent in a range determined by these orders. Our argument is variational, based on a minimization over a Nehari-Pohozaev
+manifold. We establish a maximum principle to guarantee the solution&#39;s positivity, and show
+that for the specific case of the fractional Laplacian, this positive solution is also a ground state.
+
+Speaker 8: Pedro Ubilla (USACH-Chile)
+
+Title: Perturbations that transform the critical Brezis-Nirenberg problem into a supercritical
+one.
+
+Abstract:
+We analyze perturbations of the classical Brezis–Nirenberg problem that turn the equation
+into a supercritical one. While the original critical formulation admits no solutions in certain
+cases, the perturbed version generates positive radial solutions. In dimensions greater than or equal to three, this mechanism produces solutions in parameter ranges where nonexistence was expected. This is a joint work with Luiz Faria (UFJF-Brasil) and Jeferson Silva (UFOP-Brasil).
+
