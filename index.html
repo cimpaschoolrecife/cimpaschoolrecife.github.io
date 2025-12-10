@@ -425,7 +425,7 @@
                     <h3>Mathematical Modeling in Neuroscience</h3>
                 </div>
                 <div class="course-content">
-                    <p><strong>Instructors:</strong>Fernanda Selingardi (UFAL)</p>
+                    <p><strong>Instructors:</strong>Fernanda Selingardi (UFAL), Leonardo Gollo (UBA), Marilyn Gatica (NEU)</p>
                     <p><strong>Keywords:</strong> Neural dynamics, synchronization phenomena, criticality in neural
                         networks, brain network analysis, differential equations, dynamical systems</p>
                     <p><strong>Practical Focus:</strong> Hands-on modeling of neural systems using Python.</p>
@@ -2142,328 +2142,886 @@
         <h2 class="section-title">Schedule</h2>
 
         <div class="schedule-container">
-            <!-- Filtros por dia -->
             <div class="day-filters">
-                <button class="day-filter active" data-day="day1">Jan 19</button>
-                <button class="day-filter" data-day="day2">Jan 20</button>
-                <button class="day-filter" data-day="day3">Jan 21</button>
-                <button class="day-filter" data-day="day4">Jan 22</button>
-                <button class="day-filter" data-day="day5">Jan 23</button>
-                <button class="day-filter" data-day="day6">Jan 24</button>
-                <button class="day-filter" data-day="day7">Jan 25</button>
-                <button class="day-filter" data-day="day8">Jan 26</button>
-                <button class="day-filter" data-day="day9">Jan 27</button>
-                <button class="day-filter" data-day="day10">Jan 28</button>
-                <button class="day-filter" data-day="day11">Jan 29</button>
-                <button class="day-filter" data-day="day12">Jan 30</button>
+                <button class="day-filter active" data-day="day-19">Mon, Jan 19</button>
+                <button class="day-filter" data-day="day-20">Tue, Jan 20</button>
+                <button class="day-filter" data-day="day-21">Wed, Jan 21</button>
+                <button class="day-filter" data-day="day-22">Thu, Jan 22</button>
+                <button class="day-filter" data-day="day-23">Fri, Jan 23</button>
+                <button class="day-filter" data-day="day-24">Sat, Jan 24</button>
+                <button class="day-filter" data-day="day-26">Mon, Jan 26</button>
+                <button class="day-filter" data-day="day-27">Tue, Jan 27</button>
+                <button class="day-filter" data-day="day-28">Wed, Jan 28</button>
+                <button class="day-filter" data-day="day-29">Thu, Jan 29</button>
+                <button class="day-filter" data-day="day-30">Fri, Jan 30</button>
             </div>
 
-            <!-- Programação por dia -->
-            <div class="day-schedule active" id="day1">
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕘</div>
-                        <div class="time">xx:00 - xx:00</div>
+            <div class="schedule-content">
+                <!-- Day 19 -->
+                <div class="day-schedule active" id="day-19">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🌅</div>
+                            <div class="time">08:30 - 09:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Opening Ceremony</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Welcome and event introduction</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="schedule-card">
-                        <span class="session-type course">Course name</span>
-                        <h3>Course name</h3>
-                        <div class="schedule-meta">
-                            <span class="location">Room A1</span>
-                            <span class="instructor">Instructor name</span>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">📸</div>
+                            <div class="time">09:00 - 09:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Official Photo</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Official photo of the event</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">📊</div>
+                            <div class="time">09:30 - 11:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 1</span>
+                            <h3>Topological Data Analysis in Complex Systems</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Fernando A. N. Santos (UvA)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🦠</div>
+                            <div class="time">11:00 - 12:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 2</span>
+                            <h3>Mathematical Modeling of Epidemiological Systems</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Danilo B. de Souza (BCAM) & João Gondim (UFPE)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">14:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 1)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">15:30 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Coffee Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">16:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 2)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍸</div>
+                            <div class="time">17:30 - 19:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Opening Cocktail</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 20 -->
+                <div class="day-schedule" id="day-20">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">📊</div>
+                            <div class="time">09:00 - 10:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 1</span>
+                            <h3>Topological Data Analysis in Complex Systems</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Fernando A. N. Santos (UvA)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">10:30 - 10:45</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🦠</div>
+                            <div class="time">10:45 - 12:15</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 2</span>
+                            <h3>Mathematical Modeling of Epidemiological Systems</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Danilo B. de Souza (BCAM) & João Gondim (UFPE)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">14:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 1)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">15:30 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Coffee Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">16:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 2)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 21 -->
+                <div class="day-schedule" id="day-21">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">📊</div>
+                            <div class="time">09:00 - 10:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 1</span>
+                            <h3>Topological Data Analysis in Complex Systems</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Fernando A. N. Santos (UvA)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">10:30 - 10:45</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🦠</div>
+                            <div class="time">10:45 - 12:15</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 2</span>
+                            <h3>Mathematical Modeling of Epidemiological Systems</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Danilo B. de Souza (BCAM) & João Gondim (UFPE)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">14:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 1)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">📢</div>
+                            <div class="time">15:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type talk">Poster Session</span>
+                            <h3>Participant Presentations</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">15:30 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Coffee Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">16:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 2)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 22 -->
+                <div class="day-schedule" id="day-22">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">📊</div>
+                            <div class="time">09:00 - 10:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 1</span>
+                            <h3>Topological Data Analysis in Complex Systems</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Fernando A. N. Santos (UvA)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">10:30 - 10:45</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🦠</div>
+                            <div class="time">10:45 - 12:15</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 2</span>
+                            <h3>Mathematical Modeling of Epidemiological Systems</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Danilo B. de Souza (BCAM) & João Gondim (UFPE)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">14:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 1)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">15:30 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Coffee Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">16:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 2)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 23 -->
+                <div class="day-schedule" id="day-23">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🎓</div>
+                            <div class="time">09:00 - 12:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type talk">Thematic Sessions</span>
+                            <h3>Parallel Research Talks</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>🧮 Algebra</span>
+                                <span>🧩 Combinatorics</span>
+                                <span>ε Mathematical Analysis</span>
+                                <span>🧬 Complex Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🎓</div>
+                            <div class="time">14:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type talk">Thematic Sessions</span>
+                            <h3>Parallel Research Talks</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>🧩 Combinatorics</span>
+                                <span>ε Mathematical Analysis</span>
+                                <span>🧬 Complex Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 24 -->
+                <div class="day-schedule" id="day-24">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🎭</div>
+                            <div class="time">09:00 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Cultural Activities</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Optional cultural activities - Olinda and Recife Antigo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 26 -->
+                <div class="day-schedule" id="day-26">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🧠</div>
+                            <div class="time">09:00 - 10:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 3</span>
+                            <h3>Mathematical Modeling in Neuroscience</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Marilyn Gatica, Leonardo Gollo & Fernanda Selingardi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">10:30 - 10:45</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">⚛️</div>
+                            <div class="time">10:45 - 12:15</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 4</span>
+                            <h3>Markov Decision Processes and Reinforcement Learning</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Luiz Felipe Martins (CSU)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">14:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 3)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">📢</div>
+                            <div class="time">15:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type talk">Short Talks</span>
+                            <h3>Short oral presentations by participants</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">15:30 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Coffee Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">16:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 4)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 27 -->
+                <div class="day-schedule" id="day-27">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🧠</div>
+                            <div class="time">09:00 - 10:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 3</span>
+                            <h3>Mathematical Modeling in Neuroscience</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Marilyn Gatica, Leonardo Gollo & Fernanda Selingardi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">10:30 - 10:45</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">⚛️</div>
+                            <div class="time">10:45 - 12:15</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 4</span>
+                            <h3>Markov Decision Processes and Reinforcement Learning</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Luiz Felipe Martins (CSU)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">14:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 3)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">15:30 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Coffee Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">16:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 4)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 28 -->
+                <div class="day-schedule" id="day-28">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🧠</div>
+                            <div class="time">09:00 - 10:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 3</span>
+                            <h3>Mathematical Modeling in Neuroscience</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Marilyn Gatica, Leonardo Gollo & Fernanda Selingardi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">10:30 - 10:45</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">⚛️</div>
+                            <div class="time">10:45 - 12:15</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 4</span>
+                            <h3>Markov Decision Processes and Reinforcement Learning</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Luiz Felipe Martins (CSU)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">14:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 3)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">15:30 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Coffee Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">16:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 4)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 29 -->
+                <div class="day-schedule" id="day-29">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🧠</div>
+                            <div class="time">09:00 - 10:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 3</span>
+                            <h3>Mathematical Modeling in Neuroscience</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Marilyn Gatica, Leonardo Gollo & Fernanda Selingardi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">10:30 - 10:45</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">⚛️</div>
+                            <div class="time">10:45 - 12:15</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Course 4</span>
+                            <h3>Markov Decision Processes and Reinforcement Learning</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>👨🏫 Luiz Felipe Martins (CSU)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">14:00 - 15:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 3)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">☕</div>
+                            <div class="time">15:30 - 16:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Coffee Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">💻</div>
+                            <div class="time">16:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type course">Practical Session</span>
+                            <h3>Application (Course 4)</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Discussions, projects, group activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 30 -->
+                <div class="day-schedule" id="day-30">
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🎓</div>
+                            <div class="time">09:00 - 12:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type talk">Thematic Sessions</span>
+                            <h3>Parallel Research Talks</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>🌀 Dynamical Systems</span>
+                                <span>📐 Differential Geometry</span>
+                                <span>🧠 Neurosciences</span>
+                                <span>🎲 Stochastic Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🍽️</div>
+                            <div class="time">12:30 - 14:00</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🎓</div>
+                            <div class="time">14:00 - 17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <span class="session-type talk">Thematic Sessions</span>
+                            <h3>Parallel Research Talks</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>🌀 Dynamical Systems</span>
+                                <span>📐 Differential Geometry</span>
+                                <span>🧠 Neurosciences</span>
+                                <span>🎲 Stochastic Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time-track">
+                            <div class="time-icon">🏁</div>
+                            <div class="time">17:30</div>
+                        </div>
+                        <div class="schedule-card">
+                            <h3>Closing Ceremony</h3>
+                            <div class="schedule-meta">
+                                <span class="location">Room TBA</span>
+                                <span>Farewell event</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="day-schedule" id="day2">
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕘</div>
-                        <div class="time">xx:00 - xx:00</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type course">Course name</span>
-                        <h3>Course name</h3>
-                        <div class="schedule-meta">
-                            <span class="location">Room A1</span>
-                            <span class="instructor">Instructor name</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕥</div>
-                        <div class="time">xx:45 - xx:15</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Talk</span>
-                        <h3>Title name</h3>
-                        <div class="schedule-meta">
-                            <span class="location">Auditorium</span>
-                            <span class="instructor">Instructor name</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="day-schedule" id="day5">
-                <!-- Jan 23: Complex Systems + Analysis Session -->
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕘</div>
-                        <div class="time">09:00 – 12:30</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type thematic">Thematic Session</span>
-                        <h3>Complex Systems in Physics and Statistics — Morning Session</h3>
-                        <div class="schedule-meta">
-                            <span class="location">Room TBA</span>
-                            <span class="instructor">Coordinators: Viviane Oliveira, Paulo Duarte Neto</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">☕</div>
-                        <div class="time">— Coffee Break —</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type break">Coffee Break</span>
-                        <h3>Break</h3>
-                        <div class="schedule-meta"><span class="location">Lobby</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🍽️</div>
-                        <div class="time">— Lunch —</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type break">Lunch</span>
-                        <h3>Lunch</h3>
-                        <div class="schedule-meta"><span class="location">Cafeteria</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕒</div>
-                        <div class="time">14:00 – 17:30</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type thematic">Thematic Session</span>
-                        <h3>Complex Systems in Physics and Statistics — Afternoon Session</h3>
-                        <div class="schedule-meta">
-                            <span class="location">Room TBA</span>
-                            <span class="instructor">Coordinators: Viviane Oliveira, Paulo Duarte Neto</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Analysis Session (detailed) -->
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕘</div>
-                        <div class="time">09:00 – 09:45</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Analysis Session</span>
-                        <h3>Anne Caroline Bronzi — On the well-posedness of a generalized doubly parabolic Keller–Segel
-                            system with fractional diffusion</h3>
-                        <div class="schedule-meta"><span class="location">Auditorium</span><span
-                                class="instructor">Speaker 1</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕤</div>
-                        <div class="time">09:45 – 10:30</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Analysis Session</span>
-                        <h3>Marko Antonio Rojas Medar — Theoretical Insights into Second-Grade Fluids</h3>
-                        <div class="schedule-meta"><span class="location">Auditorium</span><span
-                                class="instructor">Speaker 2</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">☕</div>
-                        <div class="time">10:30 – 11:00</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type break">Coffee Break</span>
-                        <h3>Break</h3>
-                        <div class="schedule-meta"><span class="location">Lobby</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕚</div>
-                        <div class="time">11:00 – 11:45</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Analysis Session</span>
-                        <h3>Sandra Imaculada Moreira Neto — Quasilinear elliptic problems with exponential growth via
-                            the Nehari manifold method</h3>
-                        <div class="schedule-meta"><span class="location">Auditorium</span><span
-                                class="instructor">Speaker 3</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕦</div>
-                        <div class="time">11:45 – 12:30</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Analysis Session</span>
-                        <h3>Alânnio Barbosa Nobrega — Existence and Multiplicity for a class of Dirac equations</h3>
-                        <div class="schedule-meta"><span class="location">Auditorium</span><span
-                                class="instructor">Speaker 4</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕑</div>
-                        <div class="time">14:00 – 14:45</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Analysis Session</span>
-                        <h3>Jefferson Abrantes dos Santos — Global multiplicity of positive solutions for a sublinear
-                            elliptic equation in R^N</h3>
-                        <div class="schedule-meta"><span class="location">Auditorium</span><span
-                                class="instructor">Speaker 5</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕝</div>
-                        <div class="time">14:45 – 15:30</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Analysis Session</span>
-                        <h3>Evelina Shamarova — Singular solutions to k-Hessian equations with fast-growing
-                            nonlinearities</h3>
-                        <div class="schedule-meta"><span class="location">Auditorium</span><span
-                                class="instructor">Speaker 6</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">☕</div>
-                        <div class="time">15:30 – 16:00</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type break">Coffee Break</span>
-                        <h3>Break</h3>
-                        <div class="schedule-meta"><span class="location">Lobby</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕓</div>
-                        <div class="time">16:00 – 16:45</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Analysis Session</span>
-                        <h3>Diego Ferraz — Positive ground states for integrodifferential Schrödinger–Poisson systems
-                        </h3>
-                        <div class="schedule-meta"><span class="location">Auditorium</span><span
-                                class="instructor">Speaker 7</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕠</div>
-                        <div class="time">16:45 – 17:30</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Analysis Session</span>
-                        <h3>Pedro Ubilla — Perturbations that transform the critical Brezis–Nirenberg problem into a
-                            supercritical one</h3>
-                        <div class="schedule-meta"><span class="location">Auditorium</span><span
-                                class="instructor">Speaker 8</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="day-schedule" id="day12">
-                <!-- Jan 30: Dynamical Systems Thematic Session -->
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕘</div>
-                        <div class="time">09:00 – 10:00</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Dynamical Systems</span>
-                        <h3>Clodoaldo Ragazzo — Dissipative Forces and Their Role in Celestial Mechanics</h3>
-                        <div class="schedule-meta"><span class="location">Room TBA</span><span
-                                class="instructor">Speaker</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕙</div>
-                        <div class="time">10:00 – 11:00</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Dynamical Systems</span>
-                        <h3>Antonio Carlos Fernandes — Stacked Central Configurations</h3>
-                        <div class="schedule-meta"><span class="location">Room TBA</span><span
-                                class="instructor">Speaker</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕚</div>
-                        <div class="time">11:00 – 12:00</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Dynamical Systems</span>
-                        <h3>Ronaldo Garcia — Deformations of Hamiltonians and Limit Cycles</h3>
-                        <div class="schedule-meta"><span class="location">Room TBA</span><span
-                                class="instructor">Speaker</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🍽️</div>
-                        <div class="time">— Lunch —</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type break">Lunch</span>
-                        <h3>Lunch</h3>
-                        <div class="schedule-meta"><span class="location">Cafeteria</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕑</div>
-                        <div class="time">14:00 – 15:00</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Dynamical Systems</span>
-                        <h3>Eduardo Leandro — Moments, Equilibrium Equations and Geometric Constraints</h3>
-                        <div class="schedule-meta"><span class="location">Room TBA</span><span
-                                class="instructor">Speaker</span></div>
-                    </div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time-track">
-                        <div class="time-icon">🕒</div>
-                        <div class="time">15:00 – 16:00</div>
-                    </div>
-                    <div class="schedule-card">
-                        <span class="session-type talk">Dynamical Systems</span>
-                        <h3>Lei Zhao — Billiards and Celestial Mechanics</h3>
-                        <div class="schedule-meta"><span class="location">Room TBA</span><span
-                                class="instructor">Speaker</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Repetir para outros dias (day3, day4, etc.) -->
         </div>
 
         <div class="schedule-notice">
