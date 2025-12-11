@@ -232,9 +232,9 @@ body {
   background: none;
   /* Card especial para galeria de imagens */
   .image-gallery-card {
-    background: none;
-    box-shadow: none;
-    border: none;
+    background: #FFFFFF;
+    box-shadow: #FFFFFF;
+    border: #FFFFFF;
   }
 
   .gallery-grid {
@@ -251,8 +251,8 @@ body {
     justify-content: center;
     width: 180px;
     height: 120px;
-    background: none;
-    border: none;
+    background: #FFFFFF;
+    border: #FFFFFF;
   }
 
   .gallery-img {
