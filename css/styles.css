@@ -926,6 +926,28 @@ footer .github-icon {
                        cuida disso, mas align-self: flex-start é mais direto aqui. */
 }
 
+/* Parallel Locations Styling */
+.parallel-locations {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.parallel-locations p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--text);
+}
+
+.parallel-locations strong {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+
 /* Container geral */
 details.area-summary {
   margin: 0.75em 0;                /* espaço antes/depois */

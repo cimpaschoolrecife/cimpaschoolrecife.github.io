@@ -1,0 +1,370 @@
+CIMPA SCHOOL RECIFE - Sessões temáticas
+
+Sexta-feira 23/01
+Mathematical Analysis
+
+Local: Auditório do Departamento de Estatística (segundo andar do Bloca A do CCEN).
+Períodos:
+   ●​ Manhã - 9h00 às 12h15 (intervalo: 10h30 às 10h45)
+   ●​ Tarde - 14h15 às 17h30 (intervalo: 15h45 às 16h00)
+
+Horários das palestras
+
+09h00 – 09h45:
+On the well-posedness of a generalized doubly parabolic Keller-Segel system with fractional
+diffusion
+Anne Caroline Bronzi - UNICAMP / Brazil
+
+09h45 – 10h30:
+Theoretical Insights into Second-Grade Fluids
+Marko Antonio Rojas Medar - Universidad de Tarapacá / Chile
+
+10h30 – 10h45: Break
+
+10h45 – 11h30:
+Quasilinear elliptic problems with exponential growth via the Nehari manifold method:
+Existence of nonnegative and nodal solutions
+Sandra Imaculada Moreira Neto - UEMA / Brazil
+
+11h30 – 12h15 /
+Existence and Multiplicity of solutions for a class of Dirac equations
+Alânnio Barbosa Nobrega - UFCG / Brazil
+
+12h15 - 14h14: Lunch
+
+14h15 – 15h00:
+Global multiplicity of positive solutions for a sublinear elliptic equation in RN
+Jefferson Abrantes dos Santos - UFCG / Brazil
+
+15h00 – 15h45:
+Singular solutions to k-Hessian equations with fast-growing nonlinearities
+Evelina Shamarova - UFPB / Brazil
+
+15h45 – 16h00: Break
+
+16h00 – 16h45:
+Positive ground states for integrodifferential Schrödinger-Poisson systems
+Diego Ferraz - UFRN / Brazil
+
+16h45 – 17h30:
+Perturbations that transform the critical Brezis-Nirenberg problem into a supercritical
+one.
+Pedro Ubilla - USACH / Chile
+
+
+—-----------------------------------------------------------------------------------------------------------------------
+
+Álgebra
+
+Local: Sala 314 do Departamento de Estatística (segundo andar do Bloca A do CCEN)
+Período:
+   ●​ Manhã - 9h00 às 12h15 (intervalo: 10h30 às 10h45)
+
+Horários das palestras
+
+9h00 - 9h45:
+Gorenstein ideals, Newton duality and Macaulay inverse system
+Dayane Santos de Lira - UFERSA / Brazil
+
+9h45 - 10h30:
+Lefschetz Properties and Stanley Reisner Algebras
+João Paulo Costalonga - UFES / Brazil
+
+10h30 - 10h45: Break
+
+10h45 - 11h30:
+An invitation to study Lefschetz properties
+Rodrigo Gondim - UFRPE / Brazil
+
+
+
+
+—------------------------------------------------------------------------------------------------------------------------
+
+Complex Systems in Physics and Statistics
+
+Local: Auditório do Departamento de Física (primeiro andar do Departamento de Física)
+Períodos:
+   ●​ Manhã - 9h00 às 12h15 (intervalo: 10h30 às 10h45)
+   ●​ Tarde - 14h15 às 17h30 (intervalo: 15h45 às 16h00)
+
+Horários das palestras
+
+
+9h00 – 9h30:
+Mathematical and Computational Foundations: Topological Data Analysis: A Computer
+Scientist POV
+Wilson de Oliveira - UFRPE / Brazil
+
+9:30 – 10h00:
+Mathematical and Computational Foundations: Weighted Permutation Entropy
+Borko Stosic - UFRPE / Brazil
+
+10h00 – 10h30:
+Mathematical and Computational Foundations: Generalized Solving Differential Equations
+via Neural Networks
+Tiago A. E. Ferreira - UFRPE / Brazil
+
+10h30 - 10h45: Break
+
+10h45 – 11h15:
+Modeling and Pattern Recognition in Natural Systems - From Structure to Pattern:
+Modeling and Quantifying Complexity in Sargassum Morphology and Distribution
+Paulo Duarte Neto - UFRPE / Brazil
+
+11h15 – 11h45:
+Modeling and Pattern Recognition in Natural Systems: Use of statistical tools for
+developing and exploiting ocean color satellite data for marine environmental purposes
+Vincent Vantrepotte - CNRS / IRD – LOG / Univ. Littoral Côte d’Opale / Univ. Lille /
+France
+
+11h45 – 12h15:
+Modeling and Pattern Recognition in Natural Systems: Stochastic Dynamics in Complex
+Systems: From Quantum Chaos to Optical Turbulence
+Iván R. R. Gonzalez - Universidad Mayor / Chile
+
+12h15 - 14h15: Lunch
+
+14h15 – 14h45:
+Collective Behavior, Pattern Emergence and Complex Interactions: Complexity of climate
+dynamics
+Tatijana Stosic - UFRPE / Brazil
+
+14h45 – 15h15:
+Collective Behavior, Pattern Emergence and Complex Interactions: An Introductory Toolkit
+for Analyzing Animal Groups
+Francisco C. B. Leal - UFRPE / Brazil
+
+15h15 – 15h45:
+Collective Behavior, Pattern Emergence and Complex Interactions: Mixed-phase space of
+an active particle in experimental Lemon Billiards
+Tiago Araújo Lima - UFRPE / Brazil
+
+15h45 - 16h00: Break
+
+16h00 – 16h30:
+Population and Collective Dynamics in Natural Systems: Movement bias in asymmetric
+landscapes and its impact on population distribution and critical habitat size
+Pablo de Castro - UNESP / Brazil
+
+16h30 – 17h00:
+Population and Collective Dynamics in Natural Systems: Persistence of small populations
+facing seasonal resource variability
+Viviane Moraes de Oliveira - UFRPE / Brazil
+
+17h00 – 17h30:
+Population and Collective Dynamics in Natural Systems: Evolutionary Rescue
+Paulo Roberto de Araújo Campos - UFPE / Brazil
+
+—---------------------------------------------------------------------------------------------------------------------
+
+Combinatorics, Graph Theory & Network Science
+
+Local: Sala A do Departamento de Física (primeiro andar do Departamento de Física)
+Períodos:
+   ●​ Manhã - 9h00 às 12h15 (intervalo: 10h30 às 10h45)
+   ●​ Tarde - 14h15 às 17h30 (intervalo: 15h45 às 16h00)
+
+
+Horários das palestras
+
+9h00 - 10h30:
+The Mathematics of Gossip: Modeling Social Networks with Graphs
+Luiz Paulo Freire Moreira - UFPE / Brazil
+
+10h30 - 10h45: Break
+
+10h45 - 12h15:
+Combinatorics of the Laplacian Matrix and Its Applications
+Gabriel Coutinho - UFMG / Brazil
+
+12h15 - 14h15: Lunch
+
+14h15 - 15h45:
+Computational Social Science and Social Networks
+Petter Törnberg (University of Amsterdam, Netherlands)
+
+15h45 - 16h00: Break
+
+
+—-----------------------------------------------------------------------------------------------------------------------
+
+
+Sexta-feira 30/01
+Dynamical Systems
+Local: Auditório do Departamento de Estatística (segundo andar do Bloca A do CCEN)
+Períodos:
+   ●​ Manhã - 9h00 às 12h15 (intervalo: 10h30 às 10h45)
+   ●​ Tarde - 14h15 às 17h30 (intervalo: 15h45 às 16h00)
+
+Horários das palestras
+
+9h00 - 9h45:
+Dissipative Forces and Their Role in Celestial Mechanics
+Clodoaldo Ragazzo - Universidade de São Paulo / Brazil
+
+9h45 - 10h30:
+Stacked Central Configurations
+Antonio Carlos Fernandes - Universidade Federal de Itajubá / Brazil
+
+10h30 - 10h45: Break
+
+11h00 - 11h45:
+Deformations of Hamiltonians and limit cycles
+Ronaldo Garcia - Universidade Federal de Goiás / Brazil
+
+12h15 - 14h15: Lunch
+
+14h15 - 15h00:
+Moments, Equilibrium Equations and Geometric Constraints
+Eduardo Leandro - Universidade Federal de Pernambuco / Brazil
+
+15h00 - 15h45:
+Billiards and Celestial Mechanics
+Lei Zhao - Dalian University of Technology / China
+
+15h45 - 16h00: Break
+
+—------------------------------------------------------------------------------------------------------------------------
+
+Differential Geometry
+Local: Sala 315 do Departamento de Estatística (segundo andar do Bloca A do CCEN)
+Períodos:
+   ●​ Manhã - 9h00 às 12h15 (intervalo: 10h30 às 10h45)
+   ●​ Tarde - 14h15 às 17h30 (intervalo: 15h45 às 16h00)
+
+Horários das palestras
+
+9h05 - 9h45:
+Uniqueness of tangent planes at infinite and applications
+Eddygledson Souza Gama - UFPE / Brazil
+
+9h45 - 10h25:
+Spectral rigidity of manifolds with Ricci bounded below and maximal bottom spectrum
+Elaine Sampaio - UVA / Brazil
+
+10h30 - 10h45: Break
+
+10h45 - 11h25:
+On Rigidity of Sub-Static Systems
+Allan George - UFPB / Brazil
+
+11h25 - 12h05:
+Simons-Calabi type equation for Riemannian hypersurfaces in a semi-Riemannian product
+spaces
+Joicy Priscila de Araújo Cruz - UFPE / Brazil
+
+12h15 - 14h15: Lunch
+
+14h20 - 15h00:
+On some applications of a Simons type formula for spacelike submanifolds in
+Robertson-Walker spacetime
+Maria Rosilene B. dos Santos - UFAM / Brazil
+
+15h00 - 15h40:
+Area-charge inequalities and rigidity of time-symmetric initial data sets
+Tiarlos Cruz - UFAL / Brazil
+
+—--------------------------------------------------------------------------------------------------------------------
+
+Stochastic Modeling
+
+Local: Sala 314 do Departamento de Estatística (segundo andar do Bloca A do CCEN)
+Período:
+   ●​ Tarde - 14h15 às 17h30 (intervalo: 15h45 às 16h00)
+
+Horários das palestras
+
+14h15 - 15h00:
+A Covariate-Driven Branching Process Model with Sibling Dependence
+Nancy Lopes Garcia - UNICAMP / Brazil
+
+
+15h00 - 15h45:
+Models of Colonization, Collapse, and Dispersal
+Valdivino Vargas Júnior - UFG / Brazil
+
+
+15h45 - 16h00: Break
+
+
+16h00 - 16h45
+Constrained-degree percolation on the hypercubic lattice: uniqueness and some of its
+consequences
+Diogo Carlos dos Santos - UFAL/ Brazil
+
+
+16h45 - 17h05:
+Modelo biológico com Operadores de Substituição
+Ludmila de Pinho Cavalcanti - PPGE/UFPE / Brazil
+
+
+17h05 - 17h25:
+Stochastic Models for Information Diffusion in Random Networks
+Jhon Franklin Puerres Tipas - PPGE/UFPE / Brazil
+
+
+—------------------------------------------------------------------------------------------------------------------------
+
+
+
+Neurosciences
+
+Local: sala a confirmar (primeiro andar do Departamento de Física)
+Períodos:
+   ●​ Manhã - 9h00 às 12h15 (intervalo: 10h30 às 10h45)
+   ●​ Tarde - 14h15 às 17h30 (intervalo: 15h45 às 16h00)
+
+
+Horários das palestras
+
+9h00 - 9h45:
+Competitive Interactions Between External Input and Recurrent Inhibition Shape V1
+Responses to Visual Flow Perturbations
+Claudio Mirasso - Institute for Cross-Disciplinary Physics and Complex Systems - Universitat
+de les Illes Balears (IFISC, UIB-CSIC)
+
+9h45 - 10h30:
+Collective neuronal phenomena and the critical brain hypothesis
+Mauro Copelli - Departamento de Física - UFPE / Brazil
+
+10h30 - 10h45: Break
+
+10h45 - 11h15:
+Assessing criticality in neuronal populations with maximum entropy models
+Pedro Carelli - Departamento de Física - UFPE / Brazil
+
+
+11h15 - 11h45:
+Deviation of Parabolic Avalanches dynamics in Mouse Frontal Cortex during Anhedonia
+Thais Feliciano - Laboratory of Systems Neuroscience Section on Critical Brain Dynamics -
+National Institutes of Health (NIH)
+11h45 - 12h15: Open discussion
+
+12h15 - 14h15: Lunch
+
+14h15 - 14h45:
+The End of Uniformity: Heterogeneity, Criticality, and the Brain's Hierarchy of Timescales
+Leonardo Gollo - Universitat de les Illes Balears Palma de Mallorca / Spain
+
+14h45 - 15h15:
+Insight into human photoreceptor function: Modeling optoretinographic responses to diverse
+stimuli
+Denise Valente - Física - UPE / Brazil
+
+15h15 - 15h45:
+How Humans Restructure Predictive Models: Context-Tree Dynamics in Sequential Learning
+Ítalo Pinto - Neuromat USP-SP / Brazil
+
+15h45 - 16h00: Break
+
+16h00 - 16h30:
+Cocaine and the Brain’s Reward System: A Decoding Approach
+Leandro Aguiar - UFPE / Brazil
+
+16h30 - 17h00:
+Exploring a symbolic methodology to characterize brain signals
+Fernanda S. Matias - Instituto de Física - UFAL / Brazil
+
+17h00 - 17h30: Open discussion
+

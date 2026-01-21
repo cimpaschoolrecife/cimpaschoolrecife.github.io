@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Menu mobile
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Smooth scrolling
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Scroll para o topo
   const homeLink = document.getElementById('home-link');
   if (homeLink) {
-    homeLink.addEventListener('click', function(e) {
+    homeLink.addEventListener('click', function (e) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (dayFilters.length && daySchedules.length) {
     dayFilters.forEach(filter => {
-      filter.addEventListener('click', function() {
+      filter.addEventListener('click', function () {
         dayFilters.forEach(f => f.classList.remove('active'));
         this.classList.add('active');
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!button.hasAttribute('data-toggle-bound')) {
         button.setAttribute('data-toggle-bound', 'true');
 
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
           const target = this.closest('.card').querySelector(targetSelector);
           if (target) {
             const isShowing = target.classList.toggle('show');
@@ -93,14 +93,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Toggle para áreas compactas
   document.querySelectorAll('.compact-area-header').forEach(header => {
-    header.addEventListener('click', function() {
+    header.addEventListener('click', function () {
       this.parentElement.classList.toggle('collapsed');
     });
   });
 
   // Toggle para abstracts em layout compacto
   document.querySelectorAll('.toggle-abstract').forEach(btn => {
-    btn.addEventListener('click', function(e) {
+    btn.addEventListener('click', function (e) {
       e.stopPropagation();
       const abstract = this.nextElementSibling;
       if (abstract) {
@@ -108,12 +108,23 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  // Auto-select current day in schedule
+  const today = new Date();
+  // Check if it's January 2026 (Month is 0-indexed, so 0 = January)
+  if (today.getMonth() === 0 && today.getFullYear() === 2026) {
+    const day = today.getDate();
+    const currentDayButton = document.querySelector(`.day-filter[data-day="day-${day}"]`);
+
+    if (currentDayButton) {
+      currentDayButton.click();
+    }
+  }
 });
 // Configuração específica para os abstracts de pesquisa
 document.querySelectorAll('.abstract-toggle').forEach(button => {
   if (!button.hasAttribute('data-toggle-bound')) {
     button.setAttribute('data-toggle-bound', 'true');
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       const abstract = this.previousElementSibling;
       if (abstract && abstract.classList.contains('session-abstract')) {
         abstract.classList.toggle('show');
